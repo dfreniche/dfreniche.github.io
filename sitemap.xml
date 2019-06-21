@@ -219,12 +219,12 @@
   </url>
   
   <url>
-    <loc>https://dfreniche.github.io/projects/</loc>
+    <loc>https://dfreniche.github.io/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dfreniche.github.io/categories/</loc>
-    <priority>0</priority>
+    <loc>https://dfreniche.github.io/projects/</loc>
   </url>
   
 </urlset>
