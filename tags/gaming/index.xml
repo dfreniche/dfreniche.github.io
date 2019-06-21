@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gaming on BASIC</title>
-    <link>http://www.freniche.com/tags/gaming/</link>
-    <description>Recent content in gaming on BASIC</description>
+    <title>gaming on www.freniche.com</title>
+    <link>https://dfreniche.github.io/tags/gaming/</link>
+    <description>Recent content in gaming on www.freniche.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Diego Freniche</copyright>
     <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.freniche.com/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dfreniche.github.io/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PSVita</title>
-      <link>http://www.freniche.com/wiki/gaming/psvita/</link>
+      <link>https://dfreniche.github.io/wiki/gaming/psvita/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.freniche.com/wiki/gaming/psvita/</guid>
+      <guid>https://dfreniche.github.io/wiki/gaming/psvita/</guid>
       <description>PSVita Connect PSVita via USB to Mac / PC  an application from Sony is needed https://www.playstation.com/en-ae/get-help/help-library/system---hardware/storage---data/how-do-i-get-my-pc---mac-to-be-recognised-by-my-playstation-vita/ Content Manager Assistant:  Win: http://cma.dl.playstation.net/cma/win/en/index.html macOS: http://cma.dl.playstation.net/cma/mac/en/index.html  launch the app Content Manager Assistant.app  Trinitry exploit Just follow the links
 https://github.com/TheOfficialFloW/Trinity/blob/master/README.md
 https://codestation.github.io/qcma/

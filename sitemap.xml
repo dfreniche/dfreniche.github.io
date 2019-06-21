@@ -3,173 +3,227 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.freniche.com/wiki/appcelerator/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/</loc>
+    <loc>https://dfreniche.github.io/tags/amstrad/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/wiki/bash/</loc>
+    <loc>https://dfreniche.github.io/wiki/retro/amstrad/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/wiki/gaming/psvita/</loc>
+    <loc>https://dfreniche.github.io/wiki/android/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/web/</loc>
+    <loc>https://dfreniche.github.io/wiki/appcelerator/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/wiki/</loc>
+    <loc>https://dfreniche.github.io/wiki/bash/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/appcelerator/</loc>
+    <loc>https://dfreniche.github.io/wiki/ci/bitrise/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/dos/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/bash/</loc>
+    <loc>https://dfreniche.github.io/wiki/retro/dos/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/design/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/editors/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/github/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/misc/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/gaming/psvita/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/coffeescript/</loc>
+    <loc>https://dfreniche.github.io/wiki/web/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/gaming/</loc>
+    <loc>https://dfreniche.github.io/tags/android/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/web/</loc>
+    <loc>https://dfreniche.github.io/tags/appcelerator/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/posts/2016-08-30-how-to-recover-a-deleted-git-stash/</loc>
+    <loc>https://dfreniche.github.io/tags/bash/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/bitrise/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/coffeescript/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/gaming/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/github/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/ios/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/apple/ios/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/macos/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/wiki/apple/macos/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/swift/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/vsc/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/web/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/posts/2016-08-30-how-to-recover-a-deleted-git-stash/</loc>
     <lastmod>2016-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/posts/</loc>
+    <loc>https://dfreniche.github.io/posts/</loc>
     <lastmod>2016-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/sourcetree/</loc>
+    <loc>https://dfreniche.github.io/tags/sourcetree/</loc>
     <lastmod>2016-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/git/</loc>
+    <loc>https://dfreniche.github.io/tags/git/</loc>
     <lastmod>2016-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/posts/2016-08-10-not-good-at-teamwork/</loc>
+    <loc>https://dfreniche.github.io/posts/2016-08-10-not-good-at-teamwork/</loc>
     <lastmod>2016-08-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/tags/teamwork/</loc>
+    <loc>https://dfreniche.github.io/tags/teamwork/</loc>
     <lastmod>2016-08-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/posts/2016-02-29-maintain-your-sourcetree-bookmarks-throught-several-machines/</loc>
+    <loc>https://dfreniche.github.io/posts/2016-02-29-maintain-your-sourcetree-bookmarks-throught-several-machines/</loc>
     <lastmod>2016-02-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/about/</loc>
+    <loc>https://dfreniche.github.io/about/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/wiki/android/</loc>
-    <priority>0</priority>
+    <loc>https://dfreniche.github.io/projects/</loc>
   </url>
   
   <url>
-    <loc>http://www.freniche.com/wiki/apple/ios/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/apple/macos/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/ci/bitrise/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/design/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/editors/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/github/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/misc/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/retro/amstrad/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/wiki/retro/dos/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.freniche.com/categories/</loc>
+    <loc>https://dfreniche.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
