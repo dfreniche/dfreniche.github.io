@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on www.freniche.com</title>
+    <link>https://dfreniche.github.io/about/</link>
+    <description>Recent content in Abouts on www.freniche.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Diego Freniche</copyright>
+    
+	<atom:link href="https://dfreniche.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://dfreniche.github.io/about/old_index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/about/old_index/</guid>
+      <description>www.freniche.com /**/   function blue() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #000080;color: #FFFFFF;}a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function green() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #008000;color: #00FF00;} a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function changeImage(a) { document.getElementById(&#34;img&#34;).src=a; green(); }  About BASIC 1.1 LIST
+ 10 [BLOG&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;] WORK IN PROGRESS. Here&#39;s the new, shiny blog. 20 [OLD BLOG] My old blog. In Spanish.</description>
+    </item>
+    
+  </channel>
+</rss>
