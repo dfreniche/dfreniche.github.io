@@ -6,7 +6,7 @@
     <description>Recent content on www.freniche.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Diego Freniche</copyright>
+    <copyright> </copyright>
     <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -206,22 +206,44 @@ Keep reading this post in the Mobile Jazz Blog</description>
     
     <item>
       <title></title>
-      <link>https://dfreniche.github.io/about/about/</link>
+      <link>https://dfreniche.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dfreniche.github.io/about/about/</guid>
+      <guid>https://dfreniche.github.io/about/</guid>
       <description>Hi there! I’m Diego, a Spanish Mobile Developer based in the warm sunny south of Spain. Seville is my home city and a beautiful place you should visit if haven’t done already. Ping me on twitter if you’re visiting and we can arrange some 🍻if time permits.
 I’ve been typing on keyboards since ‘88, when my parents got me a nice cassette-loading, green-screen AMSTRAD CPC 464. Since then I’ve been doing a lot of coding and just a few times I’ve been proud of code punched by me.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://dfreniche.github.io/about/old_index/</link>
+      <link>https://dfreniche.github.io/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dfreniche.github.io/about/old_index/</guid>
+      <guid>https://dfreniche.github.io/cv/</guid>
+      <description>Diego Freniche Brito - Mobile Apps Developer / Teacher Contact info  Social:
+ Twitter: https://twitter.com/dfreniche LinkedIn: http://es.linkedin.com/in/dfreniche Github: https://github.com/dfreniche StackOverflow: http://stackoverflow.com/users/225503/diego-freniche  Blog: http://www.freniche.com
+ Current location:
+ ☀️ El Saucejo, Seville (Spain) 🌍 Travelling sometimes   Current Position (Jan 2018 - ) Mobile developer at Teamwork.com.
+Maintaining the existing Projects &amp;amp; Desk Mobile Apps, written in CoffeeScript / Titanium Appcelerator. Technologies used: Node.js, CoffeeScript, Axway Appcelerator, Swift, Java (for the native modules and extensions), gulp, bash, Ruby.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dfreniche.github.io/old-about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/old-about/</guid>
       <description>www.freniche.com /**/   function blue() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #000080;color: #FFFFFF;}a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function green() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #008000;color: #00FF00;} a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function changeImage(a) { document.getElementById(&#34;img&#34;).src=a; green(); }  About BASIC 1.1 LIST
  10 [BLOG&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;] WORK IN PROGRESS. Here&#39;s the new, shiny blog. 20 [OLD BLOG] My old blog. In Spanish.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dfreniche.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/search/</guid>
+      <description></description>
     </item>
     
     <item>
