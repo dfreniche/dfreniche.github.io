@@ -7,17 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Fri, 28 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Reaching iCloud from the command line</title>
+      <link>https://dfreniche.github.io/posts/2019-07-09-reaching-icloud-from-the-command-line/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2019-07-09-reaching-icloud-from-the-command-line/</guid>
+      <description>Recently I’ve abandoned Dropbox and switched over iCloud. I’ll talk about the reasons in another post, but sounds crazy to me that right now iCloud is a better option than Dropbox in the Mac&amp;hellip;
+I have different things stored in my Cloud Storage. Some repos from unfinished projects, living proof of that moment’s abandoned hype, some personal documents, all my iPad Apps docs, shared configuration for Bash / Zsh and lots of small scripts.</description>
+    </item>
+    
+    <item>
       <title>Writing again</title>
-      <link>https://dfreniche.github.io/posts/2019-28-6-writing-again/</link>
+      <link>https://dfreniche.github.io/posts/2019-06-28-writing-again/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://dfreniche.github.io/posts/2019-28-6-writing-again/</guid>
+      <guid>https://dfreniche.github.io/posts/2019-06-28-writing-again/</guid>
       <description>This time in English!
 OK, I love to write. My old blog (in Spanish) is a testament to this. Lots of words were written there over many, many years. I also like to write fiction, but I’m so ashamed of everything I figure out that often I just compose things in my mind, where Facebook can’t read them (for now at least)
 Wanted to write again for a while now, but been agonizing (and procrastinating over) deciding the most stupid of things.</description>
