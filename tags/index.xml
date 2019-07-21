@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://dfreniche.github.io/tags/markdown/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iPad</title>
+      <link>https://dfreniche.github.io/tags/ipad/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/ipad/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>standups</title>

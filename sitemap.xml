@@ -3,20 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dfreniche.github.io/posts/2019-07-10-my-standup-shell-script/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+    <loc>https://dfreniche.github.io/posts/2019-07-21-do-you-remember-delicious/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/markdown/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dfreniche.github.io/posts/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dfreniche.github.io/tags/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/ipad/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/posts/2019-07-10-my-standup-shell-script/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -27,12 +50,6 @@
   
   <url>
     <loc>https://dfreniche.github.io/tags/terminal/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/</loc>
     <lastmod>2019-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
