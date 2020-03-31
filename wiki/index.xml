@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wikis on www.freniche.com</title>
+    <title>www.freniche.com</title>
     <link>https://dfreniche.github.io/wiki/</link>
-    <description>Recent content in Wikis on www.freniche.com</description>
+    <description>Recent content on www.freniche.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
@@ -133,12 +133,25 @@ Check GH status  https://www.githubstatus.com  </description>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://dfreniche.github.io/wiki/gaming/psvita/</guid>
-      <description>PSVita Connect PSVita via USB to Mac / PC  an application from Sony is needed https://www.playstation.com/en-ae/get-help/help-library/system---hardware/storage---data/how-do-i-get-my-pc---mac-to-be-recognised-by-my-playstation-vita/ Content Manager Assistant:  Win: http://cma.dl.playstation.net/cma/win/en/index.html macOS: http://cma.dl.playstation.net/cma/mac/en/index.html  launch the app Content Manager Assistant.app  Trinitry exploit Just follow the links
-https://github.com/TheOfficialFloW/Trinity/blob/master/README.md
-https://codestation.github.io/qcma/
+      <description>PSVita Connect PSVita (not hacked) via USB to Mac / PC  an application from Sony is needed https://www.playstation.com/en-ae/get-help/help-library/system---hardware/storage---data/how-do-i-get-my-pc---mac-to-be-recognised-by-my-playstation-vita/ Content Manager Assistant:  Win: http://cma.dl.playstation.net/cma/win/en/index.html macOS: http://cma.dl.playstation.net/cma/mac/en/index.html  launch the app Content Manager Assistant.app  Console modding H-Encore https://github.com/TheOfficialFloW/h-encore
+ supports the newest firmwares 3.65, 3.67 and 3.68
+ Trinitry exploit https://github.com/TheOfficialFloW/Trinity/blob/master/README.md
+ supports the latest firmwares 3.69 and 3.70
+ https://codestation.github.io/qcma/
 https://github.com/yifanlu/psvimgtools/releases
-Homebrew  Adrenaline: https://github.com/TheOfficialFloW/Adrenaline  Downgrade PSVita Firm https://github.com/TheOfficialFloW/modoru
-Changing the max sound level AVLS https://manuals.playstation.net/document/gb/psvita/settings/avls.html</description>
+Homebrew  Adrenaline PSP Emulator: https://github.com/TheOfficialFloW/Adrenaline GBA Emulator: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>https://dfreniche.github.io/wiki/ruby/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/wiki/ruby/</guid>
+      <description>Ruby notes Whero do gems get installed? Just type:
+$ gem env
+https://stackoverflow.com/questions/3408868/where-do-gems-install
+Problem was gem install installed stuff correctly, but couldn&amp;rsquo;t execute those gems. So I needed to add to the PATH the directories under GEM PATHS section</description>
     </item>
     
     <item>
@@ -159,7 +172,7 @@ Safari </description>
       <guid>https://dfreniche.github.io/wiki/apple/ios/</guid>
       <description>iOS Swift Swift
 Stopping the responder chain https://medium.com/@nguyenminhphuc/how-to-pass-ui-events-through-views-in-ios-c1be9ab1626b
-Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  App Store Connect Testflight Open link beta  Up until now, developers would have to manually invite testers using their email address.</description>
+Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  Dark mode  How to turn Dark Mode on in the Simulator Apple&amp;rsquo;s Dark Mode docs Opt out of Dark Mode SO</description>
     </item>
     
     <item>
@@ -170,7 +183,8 @@ Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then 
       <guid>https://dfreniche.github.io/wiki/apple/macos/</guid>
       <description>Run AppleScript from command line osascript -e &#39;choose color&#39; Ref
 Standalone color picker https://www.addictivetips.com/mac-os/use-the-color-picker-in-macos-as-a-stand-alone-app/
-Create an App from a shell script https://mathiasbynens.be/notes/shell-script-mac-apps</description>
+Create an App from a shell script https://mathiasbynens.be/notes/shell-script-mac-apps
+Hide/Show OS updates sudo softwareupdate &amp;ndash;ignore &amp;ldquo;macOS Catalina&amp;rdquo; sudo softwareupdate &amp;ndash;reset-ignored</description>
     </item>
     
   </channel>

@@ -100,6 +100,12 @@
   </url>
   
   <url>
+    <loc>https://dfreniche.github.io/wiki/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dfreniche.github.io/tags/amstrad/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -167,14 +173,13 @@
   </url>
   
   <url>
-    <loc>https://dfreniche.github.io/wiki/web/</loc>
+    <loc>https://dfreniche.github.io/wiki/ruby/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dfreniche.github.io/wiki/</loc>
+    <loc>https://dfreniche.github.io/wiki/web/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -239,6 +244,12 @@
   <url>
     <loc>https://dfreniche.github.io/wiki/apple/macos/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/ruby/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on www.freniche.com</title>
+    <link>https://dfreniche.github.io/tags/ruby/</link>
+    <description>Recent content in ruby on www.freniche.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> </copyright>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dfreniche.github.io/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ruby</title>
+      <link>https://dfreniche.github.io/wiki/ruby/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/wiki/ruby/</guid>
+      <description>Ruby notes Whero do gems get installed? Just type:
+$ gem env
+https://stackoverflow.com/questions/3408868/where-do-gems-install
+Problem was gem install installed stuff correctly, but couldn&amp;rsquo;t execute those gems. So I needed to add to the PATH the directories under GEM PATHS section</description>
+    </item>
+    
+  </channel>
+</rss>

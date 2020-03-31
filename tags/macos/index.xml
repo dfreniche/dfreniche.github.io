@@ -20,7 +20,8 @@
       <guid>https://dfreniche.github.io/wiki/apple/macos/</guid>
       <description>Run AppleScript from command line osascript -e &#39;choose color&#39; Ref
 Standalone color picker https://www.addictivetips.com/mac-os/use-the-color-picker-in-macos-as-a-stand-alone-app/
-Create an App from a shell script https://mathiasbynens.be/notes/shell-script-mac-apps</description>
+Create an App from a shell script https://mathiasbynens.be/notes/shell-script-mac-apps
+Hide/Show OS updates sudo softwareupdate &amp;ndash;ignore &amp;ldquo;macOS Catalina&amp;rdquo; sudo softwareupdate &amp;ndash;reset-ignored</description>
     </item>
     
   </channel>

@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="iOS Swift Swift
 Stopping the responder chain https://medium.com/@nguyenminhphuc/how-to-pass-ui-events-through-views-in-ios-c1be9ab1626b
-Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  App Store Connect Testflight Open link beta  Up until now, developers would have to manually invite testers using their email address."/>
+Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  Dark mode  How to turn Dark Mode on in the Simulator Apple&amp;rsquo;s Dark Mode docs Opt out of Dark Mode SO"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="https://dfreniche.github.io/wiki/apple/ios/" />
@@ -33,7 +33,7 @@ Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then 
 <meta name="twitter:title" content="iOS :: www.freniche.com — www.freniche.com // BASIC was my 1st language" />
 <meta name="twitter:description" content="iOS Swift Swift
 Stopping the responder chain https://medium.com/@nguyenminhphuc/how-to-pass-ui-events-through-views-in-ios-c1be9ab1626b
-Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  App Store Connect Testflight Open link beta  Up until now, developers would have to manually invite testers using their email address." />
+Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  Dark mode  How to turn Dark Mode on in the Simulator Apple&amp;rsquo;s Dark Mode docs Opt out of Dark Mode SO" />
 <meta name="twitter:site" content="https://dfreniche.github.io" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -44,7 +44,7 @@ Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then 
 <meta property="og:title" content="iOS :: www.freniche.com — www.freniche.com // BASIC was my 1st language">
 <meta property="og:description" content="iOS Swift Swift
 Stopping the responder chain https://medium.com/@nguyenminhphuc/how-to-pass-ui-events-through-views-in-ios-c1be9ab1626b
-Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  App Store Connect Testflight Open link beta  Up until now, developers would have to manually invite testers using their email address." />
+Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  Dark mode  How to turn Dark Mode on in the Simulator Apple&amp;rsquo;s Dark Mode docs Opt out of Dark Mode SO" />
 <meta property="og:url" content="https://dfreniche.github.io/wiki/apple/ios/" />
 <meta property="og:site_name" content="iOS" />
 <meta property="og:image" content="">
@@ -244,6 +244,19 @@ Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then 
 <pre><code class="language-bash">ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
 </code></pre>
 
+<h2 id="dark-mode">Dark mode</h2>
+
+<ul>
+<li><a href="https://technikales.com/how-to-turn-on-dark-mode-in-ios-13-simulator/">How to turn Dark Mode on in the Simulator</a></li>
+<li><a href="https://developer.apple.com/documentation/appkit/supporting_dark_mode_in_your_interface/choosing_a_specific_interface_style_for_your_ios_app">Apple&rsquo;s Dark Mode docs</a></li>
+
+<li><p>Opt out of Dark Mode <a href="https://stackoverflow.com/a/56546554/225503">SO</a></p>
+
+<pre><code>&lt;key&gt;UIUserInterfaceStyle&lt;/key&gt;
+&lt;string&gt;Light&lt;/string&gt;
+</code></pre></li>
+</ul>
+
 <h2 id="app-store-connect">App Store Connect</h2>
 
 <h3 id="testflight-open-link-beta">Testflight Open link beta</h3>
@@ -311,7 +324,7 @@ With the new TestFlight Public Link feature, however, developers can create a un
 <footer class="footer">
         <div class="footer__inner">
             <div class="copyright">
-              <span>© 2019 Diego Freniche - Powered by <a href="http://gohugo.io">Hugo</a></span>
+              <span>© 2020 Diego Freniche - Powered by <a href="http://gohugo.io">Hugo</a></span>
               <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
             </div>
         </div>
