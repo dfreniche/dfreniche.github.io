@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Feb 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bash</title>
-      <link>https://dfreniche.github.io/wiki/bash/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfreniche.github.io/wiki/bash/</guid>
-      <description>Run command after n seconds Open will start after two secs without blocking execution
-( sleep 2 &amp;amp;&amp;amp; open http://0.0.0.0:8000/ )&amp;amp;  Expand bash variable containing a path with spaces SKETCH_PLUGINS_DIRECTORY=&amp;quot;$HOME/Library/Application Support/com.bohemiancoding.sketch3/Plugins/&amp;quot; # To avoid the expasion to be splitted into two strings, we surround it with &amp;quot;&amp;quot; ls &amp;quot;$SKETCH_PLUGINS_DIRECTORY&amp;quot;  ls just one column ls -1  Check if last command succeeded some_command if [ $? -eq 0 ]; then echo OK else echo FAIL fi  Count arguments passed to a script if [ &amp;quot;$#&amp;quot; -ne 1 ]; then echo &amp;quot;Illegal number of parameters&amp;quot; fi  Check if directory exists To check if a directory exists in a shell script you can use the following:</description>
-    </item>
     
     <item>
       <title>Maintain Your Sourcetree Bookmarks Throught Several Machines</title>
