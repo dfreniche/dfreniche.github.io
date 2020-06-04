@@ -106,7 +106,7 @@ I have different things stored in my Cloud Storage. Some repos from unfinished p
                 
                 
                 
-                    <li><a href="http://blog.freniche.com">My old blog</a></li>
+                    <li><a href="/oldindex.html">My old blog</a></li>
                 
                 
             </ul>
@@ -155,7 +155,7 @@ I have different things stored in my Cloud Storage. Some repos from unfinished p
         
         
         
-            <li><a href="http://blog.freniche.com">My old blog</a></li>
+            <li><a href="/oldindex.html">My old blog</a></li>
         
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -213,24 +213,14 @@ I have different things stored in my Cloud Storage. Some repos from unfinished p
 
   <div class="post-content">
     <p>Recently I’ve abandoned Dropbox and switched over iCloud. I’ll talk about the reasons in another post, but sounds crazy to me that right now iCloud is a better option than Dropbox in the Mac&hellip;</p>
-
 <p>I have different things stored in my Cloud Storage. Some repos from unfinished projects, living proof of that moment’s abandoned hype, some personal documents, all my iPad Apps docs, shared configuration for Bash / Zsh and lots of small scripts.</p>
-
 <p>Up until now, to access the files in my Dropbox from the command line I had a symbolic link pointing from <code>$HOME/.</code> to <code>$HOME/Dropbox</code>. But the moment I moved everything to iCloud I thought, “OK, but where <em>really</em> are in my file system all these files?”. Turns out iCloud stores all files in <code>~/Library/Mobile Documents/com~apple~CloudDocs</code>. I use the wonderful command-line utility <a href="https://github.com/rupa/z">z</a> to jump around my file system, so it’ll be easy to <code>cd</code> there. But for this I’d rather prefer a symbolic link. So I ran this:</p>
-
 <pre><code>$ cd
 $ ls -sf Library/Mobile\ Documents/com~apple~CloudDocs iCloud
-</code></pre>
-
-<p>This goes to the <code>$HOME</code> folder and creates a link to the desired, hidden inside <code>Library</code> iCloud folder. Now I can also reach easily that folder.</p>
-
+</code></pre><p>This goes to the <code>$HOME</code> folder and creates a link to the desired, hidden inside <code>Library</code> iCloud folder. Now I can also reach easily that folder.</p>
 <p>Also I added this to my .zshrc:</p>
-
 <pre><code>alias cd-icloud=&quot;cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/&quot;
-</code></pre>
-
-<p>So I can just type <code>cd-icloud</code> each time I need to enter iCloud from Terminal.</p>
-
+</code></pre><p>So I can just type <code>cd-icloud</code> each time I need to enter iCloud from Terminal.</p>
 <p>Which is BTW what Apple should have done in the first place.</p>
 
   </div>

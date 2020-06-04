@@ -103,7 +103,7 @@
                 
                 
                 
-                    <li><a href="http://blog.freniche.com">My old blog</a></li>
+                    <li><a href="/oldindex.html">My old blog</a></li>
                 
                 
             </ul>
@@ -152,7 +152,7 @@
         
         
         
-            <li><a href="http://blog.freniche.com">My old blog</a></li>
+            <li><a href="/oldindex.html">My old blog</a></li>
         
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -210,46 +210,38 @@
 
   <div class="post-content">
     <p>At Teamwork’s Mobile Team we hold a Standup meeting every day, at 11:00 AM Irish Time. That’s Noon for me, here in Spain. And more than a Standup is a “Status Update” to let other members of the Mobile sub-teams know roughly what I’m doing and if I have some errand to run, or won’t be available for several hours, etc. It&rsquo;s also a good way to keep the connection with the rest of the team. Something specially important when you work 100% remotely from home.</p>
-
 <p>Since my 1st day at Teamwork I got into the habit of writing the bullet points of my standup status update in a Markdown document. This way I just read instead of remembering and stuttering through the <em>Virtual Meeting Software Of Choice</em>. Also, it serves as a handy diary with <em>everything</em> I’ve been doing.</p>
-
-<p><img src="/img/standup-script.png" alt="Visual Studio Code showing a preview of my standup document" /></p>
-
+<p><img src="/img/standup-script.png" alt="Visual Studio Code showing a preview of my standup document"></p>
 <p>But you know: each day, open that doc. Add a new section with what I’ve done yesterday and what I want to do today. Fill those. Open the browser. Go to the meeting URL&hellip; too much effort. I needed something easier and with less friction. So I decided to write a small script that does all of the above&hellip; and a bit more. Right now it even adds the date, the weather at  my location and takes a picture using my MBP’s webcam.</p>
-
 <p>You can grab the script in this <a href="https://gist.github.com/dfreniche/21425d7d911dcca89873e76c7776ad09">Github Gist</a>. As always, save it as <code>standup.sh</code>, give it execute permissions <code>chmod a+x standup.sh</code> and run it with <code>./standup.sh</code> (or put it in your $PATH).</p>
-
 <p>To take the photo using your web cam you&rsquo;ll need to install <a href="https://github.com/rharder/imagesnap">imagesnap</a> with <code>brew install imagesnap</code>.</p>
-
 <p>If you&rsquo;re too lazy to click on the link above, here is also the script:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+SU_DATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;## `date &#34;</span>+%d %m %Y <span style="color:#f92672">(</span>%a<span style="color:#f92672">)</span><span style="color:#e6db74">&#34;`&#34;</span>
+SU_TEXT1<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Yesterday:&#34;</span>
+SU_TEXT2<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Today:&#34;</span>
+SU_TEXT3<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;---&#34;</span>
 
-<pre><code class="language-bash">#!/bin/bash
+<span style="color:#75715e"># weather info</span>
+SU_WEATHER<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>curl <span style="color:#e6db74">&#39;wttr.in/Sevilla?format=3&#39;</span><span style="color:#e6db74">`</span>
 
-SU_DATE=&quot;## `date &quot;+%d %m %Y (%a)&quot;`&quot;
-SU_TEXT1=&quot;Yesterday:&quot;
-SU_TEXT2=&quot;Today:&quot;
-SU_TEXT3=&quot;---&quot;
+SU_DIR<span style="color:#f92672">=</span>~/Teamwork/daily-standups
+IMG_FILE<span style="color:#f92672">=</span>$SU_DIR/img/<span style="color:#e6db74">`</span>date <span style="color:#e6db74">&#34;+%Y-%m-%d&#34;</span><span style="color:#e6db74">`</span>.jpg 
 
-# weather info
-SU_WEATHER=`curl 'wttr.in/Sevilla?format=3'`
+<span style="color:#75715e"># Add link to that capture in standup file</span>
+MD_IMG<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;![](</span>$IMG_FILE<span style="color:#e6db74">)&#34;</span>
 
-SU_DIR=~/Teamwork/daily-standups
-IMG_FILE=$SU_DIR/img/`date &quot;+%Y-%m-%d&quot;`.jpg 
+echo <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>echo $MD_IMG; echo $SU_DATE; echo <span style="color:#e6db74">&#34;&#34;</span>; echo $SU_WEATHER; echo <span style="color:#e6db74">&#34;&#34;</span>; echo $SU_TEXT1; echo <span style="color:#e6db74">&#34;&#34;</span>; echo <span style="color:#e6db74">&#34;&#34;</span>; echo $SU_TEXT2; echo <span style="color:#e6db74">&#34;&#34;</span>; echo <span style="color:#e6db74">&#34;&#34;</span>; echo $SU_TEXT3; echo <span style="color:#e6db74">&#34;&#34;</span>; cat $SU_DIR/standup.md<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> &gt; $SU_DIR/standup.md
 
-# Add link to that capture in standup file
-MD_IMG=&quot;![]($IMG_FILE)&quot;
+open -a /Applications/Visual<span style="color:#ae81ff">\ </span>Studio<span style="color:#ae81ff">\ </span>Code.app $SU_DIR/standup.md
 
-echo &quot;$(echo $MD_IMG; echo $SU_DATE; echo &quot;&quot;; echo $SU_WEATHER; echo &quot;&quot;; echo $SU_TEXT1; echo &quot;&quot;; echo &quot;&quot;; echo $SU_TEXT2; echo &quot;&quot;; echo &quot;&quot;; echo $SU_TEXT3; echo &quot;&quot;; cat $SU_DIR/standup.md)&quot; &gt; $SU_DIR/standup.md
+<span style="color:#75715e"># Open Meet (sadly only works properly with Chrome)</span>
+open https://meet.google.com/YOUR-MEETING-LINK_HERE -a /Applications/Google<span style="color:#ae81ff">\ </span>Chrome.app
 
-open -a /Applications/Visual\ Studio\ Code.app $SU_DIR/standup.md
-
-# Open Meet (sadly only works properly with Chrome)
-open https://meet.google.com/YOUR-MEETING-LINK_HERE -a /Applications/Google\ Chrome.app
-
-# Photo capture
-imagesnap -q -w 5 $IMG_FILE
-</code></pre>
-
+<span style="color:#75715e"># Photo capture</span>
+imagesnap -q -w <span style="color:#ae81ff">5</span> $IMG_FILE
+</code></pre></div>
   </div>
   
   <div class="pagination">

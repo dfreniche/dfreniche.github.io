@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on www.freniche.com</title>
@@ -31,20 +31,20 @@
     </item>
     
     <item>
-      <title>Markdown</title>
-      <link>https://dfreniche.github.io/tags/markdown/</link>
-      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfreniche.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>iPad</title>
       <link>https://dfreniche.github.io/tags/ipad/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://dfreniche.github.io/tags/ipad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://dfreniche.github.io/tags/markdown/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
@@ -94,20 +94,20 @@
     </item>
     
     <item>
-      <title>SourceTree</title>
-      <link>https://dfreniche.github.io/tags/sourcetree/</link>
-      <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfreniche.github.io/tags/sourcetree/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>git</title>
       <link>https://dfreniche.github.io/tags/git/</link>
       <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://dfreniche.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SourceTree</title>
+      <link>https://dfreniche.github.io/tags/sourcetree/</link>
+      <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/sourcetree/</guid>
       <description></description>
     </item>
     
