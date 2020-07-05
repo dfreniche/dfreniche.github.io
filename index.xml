@@ -97,12 +97,12 @@ Keep reading this post in the Mobile Jazz Blog</description>
     
     <item>
       <title></title>
-      <link>https://dfreniche.github.io/about/</link>
+      <link>https://dfreniche.github.io/cpc-about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dfreniche.github.io/about/</guid>
-      <description>Hi there! I’m Diego, a Spanish Mobile Developer based in the warm sunny south of Spain. Seville is my home city and a beautiful place you should visit if haven’t done already. Ping me on twitter if you’re visiting and we can arrange some 🍻if time permits.
-I’ve been typing on keyboards since ‘88, when my parents got me a nice cassette-loading, green-screen AMSTRAD CPC 464. Since then I’ve been doing a lot of coding and just a few times I’ve been proud of code punched by me.</description>
+      <guid>https://dfreniche.github.io/cpc-about/</guid>
+      <description>www.freniche.com /**/   function blue() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #000080;color: #FFFFFF;}a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function green() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #008000;color: #00FF00;} a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function changeImage(a) { document.getElementById(&#34;img&#34;).src=a; green(); }  About BASIC 1.1 LIST
+ 10 [BLOG&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;] WORK IN PROGRESS. Here&#39;s the new, shiny blog. 20 [OLD BLOG] My old blog. In Spanish.</description>
     </item>
     
     <item>
@@ -120,12 +120,12 @@ For two years I&amp;rsquo;ve been maintaining the existing Projects &amp;amp; De
     
     <item>
       <title></title>
-      <link>https://dfreniche.github.io/old-about/</link>
+      <link>https://dfreniche.github.io/new-about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dfreniche.github.io/old-about/</guid>
-      <description>www.freniche.com /**/   function blue() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #000080;color: #FFFFFF;}a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function green() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #008000;color: #00FF00;} a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function changeImage(a) { document.getElementById(&#34;img&#34;).src=a; green(); }  About BASIC 1.1 LIST
- 10 [BLOG&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;] WORK IN PROGRESS. Here&#39;s the new, shiny blog. 20 [OLD BLOG] My old blog. In Spanish.</description>
+      <guid>https://dfreniche.github.io/new-about/</guid>
+      <description>Hi there! I’m Diego, a Spanish Mobile Developer based in the warm sunny south of Spain. Seville is my home city and a beautiful place you should visit if haven’t done already. Ping me on twitter if you’re visiting and we can arrange some 🍻if time permits.
+I’ve been typing on keyboards since ‘88, when my parents got me a nice cassette-loading, green-screen AMSTRAD CPC 464. Since then I’ve been doing a lot of coding and just a few times I’ve been proud of code punched by me.</description>
     </item>
     
     <item>
