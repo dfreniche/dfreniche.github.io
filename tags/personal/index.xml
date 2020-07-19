@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on www.freniche.com</title>
+    <link>https://dfreniche.github.io/tags/personal/</link>
+    <description>Recent content in personal on www.freniche.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> </copyright>
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dfreniche.github.io/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I love listening to music</title>
+      <link>https://dfreniche.github.io/posts/2020-07-19-i-love-listening-to-music/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-07-19-i-love-listening-to-music/</guid>
+      <description>I love listening to music. I can’t play any instrument, but I do enjoy listening to each note in a song, identifying the instruments, getting emotional with the lyrics of a music piece. Getting those goosebumps.
+Being a product of my time and age, I mostly listen to 80’s and 90’s songs, with some modern additions thrown into the mix. I hate Reggaeton and Trap with the power of a thousand suns, but that’s for a different post.</description>
+    </item>
+    
+  </channel>
+</rss>
