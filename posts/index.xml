@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Swift, the simple and easy to learn language?</title>
+      <link>https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/</guid>
+      <description>Photo by Kimberly Farmer on Unsplash
+Apple markets Swift as The powerful programming language that is also easy to learn.
+Nope.
+Sorry to break this on you, but Swift is far from easy to learn. This is something I’ve been commenting in the past in Twitter, Slack and private conversations with other devs. To set a baseline, if I say Swift is not easy to learn, what would an easy to learn language look like?</description>
+    </item>
     
     <item>
       <title>I love listening to music</title>

@@ -3,20 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dfreniche.github.io/posts/2020-07-19-i-love-listening-to-music/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
+    <loc>https://dfreniche.github.io/posts/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dfreniche.github.io/posts/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://dfreniche.github.io/tags/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/learning/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/swift/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/posts/2020-07-19-i-love-listening-to-music/</loc>
+    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -27,12 +50,6 @@
   
   <url>
     <loc>https://dfreniche.github.io/tags/personal/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -50,12 +67,6 @@
   
   <url>
     <loc>https://dfreniche.github.io/tags/playgrounds/</loc>
-    <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/tags/swift/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
