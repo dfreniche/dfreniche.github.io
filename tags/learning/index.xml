@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FlatMap for Optionals, took me a while to understand</title>
+      <link>https://dfreniche.github.io/posts/2020-08-13-flatmap-optionals/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-08-13-flatmap-optionals/</guid>
+      <description>In my last post I wrote about why I think Swift is not a simple language. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as simple for beginners, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&amp;rsquo;s for sure, but have been typing code since ´88.</description>
+    </item>
     
     <item>
       <title>Swift, the simple and easy to learn language?</title>
