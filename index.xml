@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Thu, 13 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The humble assignment operator in Swift</title>
+      <link>https://dfreniche.github.io/posts/2020-08-15-the-humble-assignment-operator/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-08-15-the-humble-assignment-operator/</guid>
+      <description>You&amp;rsquo;re starting to learn any programming language. From Assemmbler to Clojure, from Swift to COBOL. At some point you&amp;rsquo;ll want to assign a value to a memory position. It can be a constant or a variable. You just want to change that memory position. This is something so basic that CPUs have lots a lots of operations devoted to moving data around: setting the CPU registers, copying blocks of bytes from one place to another, moving data into the stack, etc.</description>
+    </item>
     
     <item>
       <title>FlatMap for Optionals, took me a while to understand</title>
