@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Drawing icons using Core Graphics :: www.freniche.com — www.freniche.com // BASIC was my 1st language</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Drawing icons using Core Graphics Sometimes you need to add an icon to your iOS app, The designer sends you that plain, simple icon. It can be a bitmap-based icon, like a PNG. Problem with those is they get blurry if zoomed in too much. So we can use a vector-based icon, like a Font Icon or a PDF. These are vector based, contains the instructions to draw the icon, not the icon itself."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/" />
+
+
+<link rel="stylesheet" href="https://dfreniche.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://dfreniche.github.io/assets/green.css">
+
+
+
+<link rel="stylesheet" href="https://dfreniche.github.io/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dfreniche.github.io/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="https://dfreniche.github.io/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Drawing icons using Core Graphics :: www.freniche.com — www.freniche.com // BASIC was my 1st language" />
+<meta name="twitter:description" content="Drawing icons using Core Graphics Sometimes you need to add an icon to your iOS app, The designer sends you that plain, simple icon. It can be a bitmap-based icon, like a PNG. Problem with those is they get blurry if zoomed in too much. So we can use a vector-based icon, like a Font Icon or a PDF. These are vector based, contains the instructions to draw the icon, not the icon itself." />
+<meta name="twitter:site" content="https://dfreniche.github.io/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Drawing icons using Core Graphics :: www.freniche.com — www.freniche.com // BASIC was my 1st language">
+<meta property="og:description" content="Drawing icons using Core Graphics Sometimes you need to add an icon to your iOS app, The designer sends you that plain, simple icon. It can be a bitmap-based icon, like a PNG. Problem with those is they get blurry if zoomed in too much. So we can use a vector-based icon, like a Font Icon or a PDF. These are vector based, contains the instructions to draw the icon, not the icon itself." />
+<meta property="og:url" content="https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/" />
+<meta property="og:site_name" content="Drawing icons using Core Graphics" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-10-08 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    freniche.com: Diego Freniche´s Internet homepage
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+    <ul class="menu__inner menu__inner--desktop">
+        
+        
+            
+            <li><a href="/posts">Posts</a></li>
+            
+        
+            
+            <li><a href="/projects">Projects</a></li>
+            
+        
+            
+            <li><a href="/new-about/index.html">About</a></li>
+            
+        
+        
+            <ul class="menu__sub-inner">
+            <li class="menu__sub-inner-more-trigger">More ▾</li>
+    
+            <ul class="menu__sub-inner-more hidden">
+                
+                
+                    <li><a href="/cv/">My CV</a></li>
+                
+                
+                
+                    <li><a href="/oldindex.html">My old blog 🇪🇸</a></li>
+                
+                
+            </ul>
+            </ul>
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="social">
+	
+	<a href="https://twitter.com/dfreniche" class="fa fa-twitter"></a>
+	
+	
+	<a href="https://github.com/dfreniche" class="fa fa-github"></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/dfreniche" class="fa fa-linkedin" />
+	
+	
+	<a href="https://stackoverflow.com/users/225503" class="fa fa-stack-overflow"></a>
+	
+	
+</section>
+    </ul>
+    
+    <ul class="menu__inner menu__inner--mobile">
+        
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+            <li><a href="/projects">Projects</a></li>
+        
+        
+        
+            <li><a href="/new-about/index.html">About</a></li>
+        
+        
+        
+            <li><a href="/cv/">My CV</a></li>
+        
+        
+        
+            <li><a href="/oldindex.html">My old blog 🇪🇸</a></li>
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="social">
+	
+	<a href="https://twitter.com/dfreniche" class="fa fa-twitter"></a>
+	
+	
+	<a href="https://github.com/dfreniche" class="fa fa-github"></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/dfreniche" class="fa fa-linkedin" />
+	
+	
+	<a href="https://stackoverflow.com/users/225503" class="fa fa-stack-overflow"></a>
+	
+	
+</section>
+    </ul>
+</nav>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/">Drawing icons using Core Graphics</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-10-08
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://dfreniche.github.io/tags/swift/">swift</a>&nbsp;
+    
+    #<a href="https://dfreniche.github.io/tags/coregraphics/">coregraphics</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    
+
+<h1 id="drawing-icons-using-core-graphics">Drawing icons using Core Graphics</h1>
+
+<p>Sometimes you need to add an icon to your iOS app, The designer sends you that plain, simple icon. It can be a bitmap-based icon, like a PNG. Problem with those is they get blurry if zoomed in too much. So we can use a vector-based icon, like a Font Icon or a PDF. These are vector based, contains the instructions to draw the icon, not the icon itself. This way you can stretch the icon as much as you want, and you&rsquo;ll never see &ldquo;big pixels&rdquo; in your app.</p>
+
+<p>But what happens when you have a screen capture of your icon, but can&rsquo;t get any of these options? Well, this means it&rsquo;s time to dust-off your Core Graphics Skills and draw the icon by yourself. Won&rsquo;t even mention the <em>horrible</em> alternative of taking a screenshot and cutting the icon. Don&rsquo;t do it. I&rsquo;ve done it and it&rsquo;s, indeed, <em>horrible</em>.</p>
+
+<p>Instead of telling you what <a href="https://developer.apple.com/documentation/coregraphics">Core Graphics</a> is and how it works, we&rsquo;ll write code to solve a problem, so you can experiment and learn by doing. This is my preferred way of learning a new framework / library / language: try things, read a bit, try more stuff, read more seriously, watch videos, <code>GOTO 1</code>.</p>
+
+<h2 id="the-notebook-icon">The Notebook Icon</h2>
+
+<p>The icon we&rsquo;ll try to recreate is this one:</p>
+
+<p><img src="/img/notebook-icon.png" alt="Icon of a Notebook with a darker spine, title and subtitle" /></p>
+
+<p>Represents a notebook with a background color that can change, a darker same color spine and a couple lines to represent the Notebook title.</p>
+
+<h2 id="create-a-new-playground">Create a new Playground</h2>
+
+<p>We&rsquo;ll do all our coding inside a Playground. So we can get instant feedback. In the end, it will look like this:</p>
+
+<p><img src="/img/notebook-icon-playground.png" alt="Screen capture showing a Playground running the example with a Notebook icon" /></p>
+
+<p>But for now let&rsquo;s create a Playground called <code>Icons</code>. It will just have one Playground page. Remove everything inside that page and just add:</p>
+
+<pre><code class="language-swift">import UIKit
+import PlaygroundSupport
+</code></pre>
+
+<p>We&rsquo;ll use the first import to draw Views and use Core Graphics (it&rsquo;s included by <code>UIKit</code>). <code>PlaygroundSupport</code> will help us show nice previews of our work inside the Playground.</p>
+
+<h2 id="planning-our-work">Planning our work</h2>
+
+<p>Looking at that notebook icon we can see it&rsquo;s composed of 4 rectangles:
+- a big rectangle that forms the Notebook itself
+- a spine rectangle
+- and a couple rectangles that seems like text written as title and subtitle</p>
+
+<p>So we&rsquo;ll do exactly that, starting with a view that will be the main notebook icon</p>
+
+<h2 id="the-notebook-icon-view">The Notebook Icon View</h2>
+
+<p>We&rsquo;ll start with this:</p>
+
+<pre><code class="language-swift">import UIKit
+import PlaygroundSupport
+
+public class NotebookIcon: UIView {
+}
+
+var icon1 = NotebookIcon(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+
+PlaygroundPage.current.liveView = icon1
+</code></pre>
+
+<p>Putting this in the Playground, we get a white square painted in the preview. What&rsquo;s happening here?</p>
+
+<ul>
+<li>we define our NotebookIconView class. Will be a subclass of UIView, so can be <a href="https://developer.apple.com/documentation/uikit/uiview/1622616-addsubview">easily added</a> to any other UIView in our program.</li>
+</ul>
+
+<pre><code class="language-swift">public class NotebookIconView: UIView {
+}
+</code></pre>
+
+<ul>
+<li>then, we create an instance of this class, passing in a CGRect. This is just a rectangle with the dimensions of the <code>NotebookView</code> we want to create.</li>
+</ul>
+
+<pre><code class="language-swift">var icon1 = NotebookIconView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+</code></pre>
+
+<ul>
+<li>finally, we tell the Playground to show us the NotebookIconView:</li>
+</ul>
+
+<pre><code class="language-swift">PlaygroundPage.current.liveView = icon1
+</code></pre>
+
+<p>The view appears White because that&rsquo;s the default background color of the Playground Support View, and <code>icon2</code> own backgroundColor is <code>nil</code>, meaning transparent color.</p>
+
+<h2 id="a-builder-for-the-icon">A builder for the icon</h2>
+
+<p>We want to pass more information while we create our icon. We need to pass in a <code>CGRect</code> to set the size and a colour. And we&rsquo;ll have to adjust the corner radius (to make this rectangle corner&rsquo;s rounded). We&rsquo;ll use a static factory method:</p>
+
+<pre><code class="language-swift">public class NotebookIconView: UIView {
+    
+    public static func build(withColor color: UIColor, usingFrame frame: CGRect) -&gt; NotebookIconView {
+        
+        // create the icon
+        let icon = NotebookIconView()
+
+        // set background color
+        icon.backgroundColor = color
+
+        // all subview inside this view are confined to the bounds of this Notebook
+        icon.clipsToBounds = true
+
+        // we want rounded corners
+        icon.layer.cornerRadius = 15
+
+        // set frame of the icon to argument passed
+        icon.frame = frame
+
+        // we've finished the tuning, return it
+        return icon
+    }
+}
+</code></pre>
+
+<p>Now we can create another icon and show it in the preview:</p>
+
+<pre><code class="language-swift">var icon2 = NotebookIconView.build(withColor: .brown, usingFrame: CGRect(x: 0, y: 0, width: 100, height: 100))
+
+PlaygroundPage.current.liveView = icon2
+</code></pre>
+
+<p>Progress! We now have a view with desired background color and round corners!</p>
+
+<p><img src="/img/notebook-icon-1.png" alt="First step, showing just a brown rectangle with rounded corners" /></p>
+
+<h2 id="notebook-spine">Notebook Spine</h2>
+
+<p>Up until now we&rsquo;ve created a view, changed its color and round corners. Now it&rsquo;s time to draw <em>inside</em> that view. To do that we&rsquo;ll overwrite <a href="https://developer.apple.com/documentation/uikit/uiview"><code>UIView:draw(_ rect: CGRect)</code></a>.</p>
+
+<p>Also, we&rsquo;ll add some constants to get correct proportions of all rectangles. If we set the spine&rsquo;s width to, say 40 points, it will look great with a Notebook icon 200x200 points in size, but too small for a 2000x2000 icon. So it&rsquo;s better to use a proportional factor.</p>
+
+<p>Let&rsquo;s add this code inside <code>NotebookIconView</code>, just after our <code>build</code> method:</p>
+
+<pre><code class="language-swift">    // Constants
+    private static let spacePercentage: CGFloat = 0.75
+    private let spineWidthPercentage: CGFloat = 0.175
+    private let titleLeftSpcToSpinePercent: CGFloat = 0.05
+    private let titleWidthPercentage: CGFloat = 0.6
+    private let titleHeightPercentage: CGFloat = 0.05
+    private let titleTopPaddingPercentage: CGFloat = 0.2
+    private let subtitleTopPaddingPercent: CGFloat = 0.3
+
+    // Method that draws inside our view
+    override public func draw(_ rect: CGRect) {
+        
+        // Do we have access to a CoreGraphics context?
+        // This is the canvas we'll use to draw
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+
+        // as we'll refer a lot to this views dimensions, we store them in short-named constants
+        let x = self.bounds.origin.x
+        let y = self.bounds.origin.y
+        let width = self.bounds.width
+        let height = self.bounds.height
+
+        // Notebook spine width
+        let spineWidth = self.bounds.width * spineWidthPercentage
+        
+        // set the fill color for the context. This will be used for any fill until we change it. We set it at 25% transparency        
+        context.setFillColor(UIColor.black.withAlphaComponent(0.25).cgColor)
+                
+        // fill a rectangle that covers left side of the notebook view with the background color
+        context.fill(CGRect(x: x, y: y, width: spineWidth, height: height))
+    }
+</code></pre>
+
+<p><img src="/img/notebook-icon-2.png" alt="Second step, showing Notebook with a Spine" /></p>
+
+<p>Thanks to the <code>clipToBounds</code> property, although we&rsquo;re drawing a regular rectangle, it get&rsquo;s clipped and we just see the external rounded corners of our main view, but we can see it&rsquo;s a regular rectangle after all just by looking at then internal corners of that rectangle. If you want to really see that rectangle, change this line to:</p>
+
+<pre><code>    context.fill(CGRect(x: x + 20, y: y, width: spineWidth, height: height))
+</code></pre>
+
+<h2 id="finishing-touches">Finishing touches</h2>
+
+<p>Now we need to add the two &ldquo;Title lines&rdquo;. Again, two more rectangles. Let&rsquo;s add this to our <code>draw</code> method:</p>
+
+<pre><code class="language-swift">    // Title
+    let titleLeftSpace = width * titleLeftSpcToSpinePercent
+    let titleWidth = width * titleWidthPercentage
+    let titleRect = CGRect(x: spineWidth + titleLeftSpace,
+                           y: height * titleTopPaddingPercentage,
+                           width: titleWidth,
+                           height: height * titleHeightPercentage)
+    drawCGRoundedRect(titleRect,
+                      usingColor: UIColor.white.withAlphaComponent(0.70),
+                      withCornerRadius: 5)
+    
+    // Subtitle
+    let subtitleWidth = width * 0.4
+    let subtitleRect = CGRect(x: spineWidth + titleLeftSpace,
+                              y: height * subtitleTopPaddingPercent,
+                              width: subtitleWidth,
+                              height: height * titleHeightPercentage)
+    drawCGRoundedRect(subtitleRect,
+                      usingColor: UIColor.white.withAlphaComponent(0.70),
+                      withCornerRadius: 5)
+</code></pre>
+
+<p>Also, we&rsquo;re using this small function to draw rounded rectangles easily:</p>
+
+<pre><code class="language-swift">func drawCGRoundedRect(_ rect: CGRect, usingColor color: UIColor, withCornerRadius cornerRadius: CGFloat) {
+    
+    let path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
+    color.setFill()
+    path.fill()
+}
+</code></pre>
+
+<p>Here we use a <em>path</em>, which is a closed sequence of points. Remembers those drawings you can do just joining points with lines? A path is just that. We define a path using a rectangle, set a <code>cornerRadius</code> so the borders are rounded and fill the area inside that path with a color.</p>
+
+<p>This is our final result. You can make taller, wider, etc. Experiment with it!</p>
+
+<p><img src="/img/final.png" alt="" /></p>
+
+<h2 id="improvements">Improvements</h2>
+
+<p>We are using a fixed corner radius (15), that can look good if you&rsquo;re using a small icon, but not so great with a bigger one. If you like this article and say Hello in twitter, we&rsquo;ll add that and also create a new icon for different file types, with text, color, etc. Something like:</p>
+
+<p><img src="/img/file-icon.png" alt="" /></p>
+
+<h2 id="complete-code">Complete code</h2>
+
+<p>Just copy this code inside a playground and start experimenting. It&rsquo;s the best way to learn something!</p>
+
+<pre><code class="language-swift">import UIKit
+import PlaygroundSupport
+
+func drawCGRoundedRect(_ rect: CGRect, usingColor color: UIColor, withCornerRadius cornerRadius: CGFloat) {
+    
+    let path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
+    color.setFill()
+    path.fill()
+}
+
+public class NotebookIconView: UIView {
+    
+    public static func build(withColor color: UIColor, usingFrame frame: CGRect) -&gt; NotebookIconView {
+        
+        // create the icon
+        let icon = NotebookIconView()
+
+        // set background color
+        icon.backgroundColor = color
+
+        // all subview inside this view are confined to the bounds of this Notebook
+        icon.clipsToBounds = true
+
+        // we want rounded corners
+        icon.layer.cornerRadius = 15
+
+        // set frame of the icon to argument passed
+        icon.frame = frame
+
+        // we've finished the tuning, return it
+        return icon
+    }
+    
+    // Constants
+    private static let spacePercentage: CGFloat = 0.75
+    private let spineWidthPercentage: CGFloat = 0.175
+    private let titleLeftSpcToSpinePercent: CGFloat = 0.05
+    private let titleWidthPercentage: CGFloat = 0.6
+    private let titleHeightPercentage: CGFloat = 0.05
+    private let titleTopPaddingPercentage: CGFloat = 0.2
+    private let subtitleTopPaddingPercent: CGFloat = 0.3
+
+    // Method that draws inside our view
+    override public func draw(_ rect: CGRect) {
+        
+        // Do we have access to a CoreGraphics context?
+        // This is the canvas we'll use to draw
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+
+        // as we'll refer a lot to this views dimensions, we store them in short-named constants
+        let x = self.bounds.origin.x
+        let y = self.bounds.origin.y
+        let width = self.bounds.width
+        let height = self.bounds.height
+
+        // Notebook spine width
+        let spineWidth = self.bounds.width * spineWidthPercentage
+        
+        // set the fill color for the context. This will be used for any fill until we change it. We set it at 25% transparency
+        context.setFillColor(UIColor.black.withAlphaComponent(0.25).cgColor)
+                
+        // fill a rectangle that covers left side of the notebook view with the background color
+        context.fill(CGRect(x: x, y: y, width: spineWidth, height: height))
+        
+        // Title
+        let titleLeftSpace = width * titleLeftSpcToSpinePercent
+        let titleWidth = width * titleWidthPercentage
+        let titleRect = CGRect(x: spineWidth + titleLeftSpace,
+                               y: height * titleTopPaddingPercentage,
+                               width: titleWidth,
+                               height: height * titleHeightPercentage)
+        drawCGRoundedRect(titleRect,
+                          usingColor: UIColor.white.withAlphaComponent(0.70),
+                          withCornerRadius: 5)
+        
+        // Subtitle
+        let subtitleWidth = width * 0.4
+        let subtitleRect = CGRect(x: spineWidth + titleLeftSpace,
+                                  y: height * subtitleTopPaddingPercent,
+                                  width: subtitleWidth,
+                                  height: height * titleHeightPercentage)
+        drawCGRoundedRect(subtitleRect,
+                          usingColor: UIColor.white.withAlphaComponent(0.70),
+                          withCornerRadius: 5)
+    }
+}
+
+
+
+var icon = NotebookIconView.build(withColor: .brown, usingFrame: CGRect(x: 0, y: 0, width: 100, height: 100))
+
+PlaygroundPage.current.liveView = icon
+</code></pre>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="https://dfreniche.github.io/posts/2020-08-15-the-humble-assignment-operator/">
+          <span class="button__text">The humble assignment operator in Swift</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user"> </div>
+    
+  </div>
+</footer>
+
+<script src="https://dfreniche.github.io/assets/main.js"></script>
+<script src="https://dfreniche.github.io/assets/prism.js"></script>
+
+
+<footer class="footer">
+        <div class="footer__inner">
+            <div class="copyright">
+              <span>© 2020 Diego Freniche - Powered by <a href="http://gohugo.io">Hugo</a></span>
+              <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+            </div>
+        </div>
+      </footer>
+
+  
+</div>
+
+</body>
+</html>

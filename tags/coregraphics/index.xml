@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coregraphics on www.freniche.com</title>
+    <link>https://dfreniche.github.io/tags/coregraphics/</link>
+    <description>Recent content in coregraphics on www.freniche.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> </copyright>
+    <lastBuildDate>Thu, 08 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dfreniche.github.io/tags/coregraphics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Drawing icons using Core Graphics</title>
+      <link>https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/</guid>
+      <description>Drawing icons using Core Graphics Sometimes you need to add an icon to your iOS app, The designer sends you that plain, simple icon. It can be a bitmap-based icon, like a PNG. Problem with those is they get blurry if zoomed in too much. So we can use a vector-based icon, like a Font Icon or a PDF. These are vector based, contains the instructions to draw the icon, not the icon itself.</description>
+    </item>
+    
+  </channel>
+</rss>

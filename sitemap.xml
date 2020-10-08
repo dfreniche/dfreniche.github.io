@@ -3,14 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/</loc>
+    <lastmod>2020-10-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dfreniche.github.io/posts/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dfreniche.github.io/tags/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/coregraphics/</loc>
+    <lastmod>2020-10-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/swift/</loc>
+    <lastmod>2020-10-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/</loc>
+    <lastmod>2020-10-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,18 +44,6 @@
   
   <url>
     <loc>https://dfreniche.github.io/tags/learning/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/tags/swift/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
