@@ -3,14 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dfreniche.github.io/posts/2021-05-03-leaving-teamwork/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dfreniche.github.io/posts/</loc>
-    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dfreniche.github.io/tags/</loc>
-    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/personal/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/tags/teamwork/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dfreniche.github.io/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -33,12 +56,6 @@
   
   <url>
     <loc>https://dfreniche.github.io/tags/ios/</loc>
-    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/</loc>
     <lastmod>2020-10-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -88,12 +105,6 @@
   
   <url>
     <loc>https://dfreniche.github.io/tags/music/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/tags/personal/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -220,12 +231,6 @@
   <url>
     <loc>https://dfreniche.github.io/posts/2016-08-10-not-good-at-teamwork/</loc>
     <lastmod>2016-08-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dfreniche.github.io/tags/teamwork/</loc>
-    <lastmod>2016-08-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

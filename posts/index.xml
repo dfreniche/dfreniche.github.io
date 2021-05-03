@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leaving Teamwork</title>
+      <link>https://dfreniche.github.io/posts/2021-05-03-leaving-teamwork/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2021-05-03-leaving-teamwork/</guid>
+      <description>6th of May will be my last &amp;ldquo;official&amp;rdquo; day at Teamwork. Now I&amp;rsquo;m on my 2nd Annual Leave week, so effectively I&amp;rsquo;m out of the company since last Friday April 23th. Leaving a job can or can&amp;rsquo;t be a big deal. It depends on how invested you&amp;rsquo;re in it, how much you need the money, your personal / finances situation, etc. For me, as excited and happy I am about my next role, this is a sad event.</description>
+    </item>
     
     <item>
       <title>Using a local and global Cocoapods executable</title>
