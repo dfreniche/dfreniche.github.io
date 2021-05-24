@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Less Harsh Xcode Errors</title>
+      <link>https://dfreniche.github.io/posts/2021-05-24-less-harsh-xcode-errors/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2021-05-24-less-harsh-xcode-errors/</guid>
+      <description>Coding is sometimes hard. We all know this. But dealing with compiler errors is one of the worst parts. You have this idea in your mind, you want to try it quickly and then, 💥 compiler error! You forgot those semicolons! Or you added them and your language doesn&amp;rsquo;t like them! Or that class lacks a constructor!
+Whatever the reason, compiler errors are always harsh: we made a mistake, and the compiler is not forgiving.</description>
+    </item>
     
     <item>
       <title>Leaving Teamwork</title>
