@@ -185,34 +185,14 @@ Keep reading this post in the Mobile Jazz Blog</description>
     
     <item>
       <title></title>
-<<<<<<< HEAD
-=======
-      <link>https://dfreniche.github.io/cpc-about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfreniche.github.io/cpc-about/</guid>
-      <description>www.freniche.com /**/   function blue() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #000080;color: #FFFFFF;}a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function green() { var sheet = document.createElement(&#39;style&#39;) sheet.innerHTML = &#34;body { background-color: #008000;color: #00FF00;} a {color: #00FF00;}&#34;; document.body.appendChild(sheet); } function changeImage(a) { document.getElementById(&#34;img&#34;).src=a; green(); }  About BASIC 1.1 LIST
- 10 [BLOG&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;] WORK IN PROGRESS. Here&#39;s the new, shiny blog. 20 [OLD BLOG] My old blog. In Spanish.</description>
-    </item>
-    
-    <item>
-      <title></title>
->>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
       <link>https://dfreniche.github.io/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dfreniche.github.io/cv/</guid>
-<<<<<<< HEAD
       <description>Diego Freniche Brito - Mobile Apps Developer, sometimes Teacher Contact info   Social:
  Twitter: https://twitter.com/dfreniche LinkedIn: http://es.linkedin.com/in/dfreniche Github: https://github.com/dfreniche StackOverflow: http://stackoverflow.com/users/225503/diego-freniche    Blog: http://www.freniche.com
   Current location:
- ☀️ El Saucejo, Seville (Spain) 🌍 Traveling sometimes not much these days&amp;hellip;     Current Position May 2021 Realm Mobile Developer Advocate at MongoDB  creating content for the Realm DevHub (blog posts, videos, streaming, etc.</description>
-=======
-      <description>Diego Freniche Brito - Mobile Apps Developer, sometimes Teacher Contact info  Social:
- Twitter: https://twitter.com/dfreniche LinkedIn: http://es.linkedin.com/in/dfreniche Github: https://github.com/dfreniche StackOverflow: http://stackoverflow.com/users/225503/diego-freniche  Blog: http://www.freniche.com
- Current location:
- ☀️ El Saucejo, Seville (Spain) 🌍 Traveling sometimes   Current Position (Jan 2018 - ) Senior Mobile developer at Teamwork.com. For two years I&amp;rsquo;ve been maintaining the existing Projects &amp;amp; Desk Mobile Apps, written in CoffeeScript / Titanium Appcelerator. Technologies used:</description>
->>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
+ ☀️ El Saucejo, Seville (Spain) 🌍 Traveling sometimes not much these days&amp;hellip;     Current Position (May 2021 -) Realm Mobile Developer Advocate at MongoDB  creating content for the Realm DevHub (blog posts, videos, streaming, etc.</description>
     </item>
     
     <item>

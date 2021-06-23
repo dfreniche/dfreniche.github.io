@@ -210,7 +210,6 @@
 
   <div class="post-content">
     <p>You&rsquo;re starting to learn <em>any</em> programming language. From Assemmbler to Clojure, from Swift to COBOL. At some point you&rsquo;ll want to assign a value to a memory position. It can be a constant or a variable. You just want to change that memory position. This is something so basic that CPUs have lots a lots of operations devoted to moving data around: setting the CPU registers, copying blocks of bytes from one place to another, moving data into the stack, etc. etc. Assigning is fundamental to any programming language.</p>
-<<<<<<< HEAD
 <p>Yet here we are again, Swift. I&rsquo;ve seen this problem hitting my students starting with the language. It also hit me at the beginning. I even filed a Radar for it, but was closed. This is the problem:</p>
 <ul>
 <li>this code works</li>
@@ -230,42 +229,6 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> b =   <span style="color:#ae81ff">10</span>
 <span style="color:#66d9ef">let</span> c     = <span style="color:#ae81ff">10</span>
 </code></pre></div><p>All in all, don&rsquo;t prepend/append anything to the <code>=</code> operator. This confuses Swift. Most probably because assignment is so important they don&rsquo;t even let you overload it. See?, it&rsquo;s important. Now make it more friendly.</p>
-=======
-
-<p>Yet here we are again, Swift. I&rsquo;ve seen this problem hitting my students starting with the language. It also hit me at the beginning. I even filed a Radar for it, but was closed. This is the problem:</p>
-
-<ul>
-<li>this code works</li>
-</ul>
-
-<pre><code class="language-swift">let b = 10
-</code></pre>
-
-<ul>
-<li>this also works</li>
-</ul>
-
-<pre><code class="language-swift">let b=10
-</code></pre>
-
-<ul>
-<li>this doesn&rsquo;t. Wait, what?</li>
-</ul>
-
-<pre><code class="language-swift">let b =10
-let c= 10
-</code></pre>
-
-<p>If you try any two of the latter, you&rsquo;ll get a nice error telling you <em>&rsquo;=&rsquo; must have consistent whitespace on both sides</em>. That is, you either put <em>spaces</em> on each side or no spaces at all. This is not only not forgiving for the aspiring developer, it&rsquo;s super confusing because you don&rsquo;t have this seemingly random restriction in other languages.</p>
-
-<p>But it&rsquo;s worst for you in the audience with Programming-OCD. Whitespace can be <em>inconsistent</em> but compiler-correct. Like so:</p>
-
-<pre><code class="language-swift">let b =   10
-let c     = 10
-</code></pre>
-
-<p>All in all, don&rsquo;t prepend/append anything to the <code>=</code> operator. This confuses Swift. Most probably because assignment is so important they don&rsquo;t even let you overload it. See?, it&rsquo;s important. Now make it more friendly.</p>
->>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
 
   </div>
   
