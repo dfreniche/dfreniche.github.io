@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docs on www.freniche.com</title>
+    <link>https://dfreniche.github.io/tags/docs/</link>
+    <description>Recent content in docs on www.freniche.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> </copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dfreniche.github.io/tags/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Nef to test and document libraries</title>
+      <link>https://dfreniche.github.io/posts/2020-07-12-nef/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-07-12-nef/</guid>
+      <description>Sometimes I need to use a third party library (usually added to my project using CocoaPods) so I quickly grab it, integrate it and start adding code. But some frameworks are more difficult to understand, learn and use than others.
+Recently I’ve been learning RxSwift. I learn by trying out some code while reading or watching videos. I really need to code for it to stick. I can create a full-blown project and add that RxSwift dependency via CocoaPods, but what I don’t want it’s all the other stuff that comes with a project: storyboards, ViewControllers, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

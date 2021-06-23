@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>FlatMap for Optionals, took me a while to understand :: www.freniche.com — www.freniche.com // BASIC was my 1st language</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="In my last post I wrote about why I think Swift is not a simple language. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as simple for beginners, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&amp;rsquo;s for sure, but have been typing code since ´88."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://dfreniche.github.io/posts/2020-08-13-flatmap-optionals/" />
+
+
+<link rel="stylesheet" href="https://dfreniche.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://dfreniche.github.io/assets/green.css">
+
+
+
+<link rel="stylesheet" href="https://dfreniche.github.io/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dfreniche.github.io/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="https://dfreniche.github.io/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="FlatMap for Optionals, took me a while to understand :: www.freniche.com — www.freniche.com // BASIC was my 1st language" />
+<meta name="twitter:description" content="In my last post I wrote about why I think Swift is not a simple language. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as simple for beginners, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&amp;rsquo;s for sure, but have been typing code since ´88." />
+<meta name="twitter:site" content="https://dfreniche.github.io/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="FlatMap for Optionals, took me a while to understand :: www.freniche.com — www.freniche.com // BASIC was my 1st language">
+<meta property="og:description" content="In my last post I wrote about why I think Swift is not a simple language. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as simple for beginners, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&amp;rsquo;s for sure, but have been typing code since ´88." />
+<meta property="og:url" content="https://dfreniche.github.io/posts/2020-08-13-flatmap-optionals/" />
+<meta property="og:site_name" content="FlatMap for Optionals, took me a while to understand" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-08-13 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    freniche.com: Diego Freniche´s Internet homepage
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+    <ul class="menu__inner menu__inner--desktop">
+        
+        
+            
+            <li><a href="/posts">Posts</a></li>
+            
+        
+            
+            <li><a href="/projects">Projects</a></li>
+            
+        
+            
+            <li><a href="/new-about/index.html">About</a></li>
+            
+        
+        
+            <ul class="menu__sub-inner">
+            <li class="menu__sub-inner-more-trigger">More ▾</li>
+    
+            <ul class="menu__sub-inner-more hidden">
+                
+                
+                    <li><a href="/cv/">My CV</a></li>
+                
+                
+                
+                    <li><a href="/oldindex.html">My old blog 🇪🇸</a></li>
+                
+                
+            </ul>
+            </ul>
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="social">
+	
+	<a href="https://twitter.com/dfreniche" class="fa fa-twitter"></a>
+	
+	
+	<a href="https://github.com/dfreniche" class="fa fa-github"></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/dfreniche" class="fa fa-linkedin" />
+	
+	
+	<a href="https://stackoverflow.com/users/225503" class="fa fa-stack-overflow"></a>
+	
+	
+</section>
+    </ul>
+    
+    <ul class="menu__inner menu__inner--mobile">
+        
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+            <li><a href="/projects">Projects</a></li>
+        
+        
+        
+            <li><a href="/new-about/index.html">About</a></li>
+        
+        
+        
+            <li><a href="/cv/">My CV</a></li>
+        
+        
+        
+            <li><a href="/oldindex.html">My old blog 🇪🇸</a></li>
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="social">
+	
+	<a href="https://twitter.com/dfreniche" class="fa fa-twitter"></a>
+	
+	
+	<a href="https://github.com/dfreniche" class="fa fa-github"></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/dfreniche" class="fa fa-linkedin" />
+	
+	
+	<a href="https://stackoverflow.com/users/225503" class="fa fa-stack-overflow"></a>
+	
+	
+</section>
+    </ul>
+</nav>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://dfreniche.github.io/posts/2020-08-13-flatmap-optionals/">FlatMap for Optionals, took me a while to understand</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-08-13
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://dfreniche.github.io/tags/swift/">swift</a>&nbsp;
+    
+    #<a href="https://dfreniche.github.io/tags/learning/">learning</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>In my last post I wrote about <a href="https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/">why I think Swift is not a simple language</a>. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as <em>simple for beginners</em>, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&rsquo;s for sure, but have been typing code since ´88. I´ve seen a couple lines of code. I shouldn&rsquo;t struggle with stuff like this.</p>
+<h2 id="exhibit-one">Exhibit one</h2>
+<p>I found similar code to this example during a PR review:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> numberAsString: String? = <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">100</span><span style="color:#960050;background-color:#1e0010">”</span>
+
+<span style="color:#75715e">/// ...</span>
+
+<span style="color:#66d9ef">let</span> n: Int? = numberAsString.flatMap(Int.<span style="color:#66d9ef">init</span>)
+</code></pre></div><p>Wait, what? <code>flatMap</code>? Isn´t that a function for arrays of arrays, that apply a transform to the whole array, then <em>flattens</em> the result into a single array? Well, yes. The idea behind <code>Array::flatMap</code> is to apply a transform to all elements inside an array, that can contain other arrays, so every element gets transformed.</p>
+<h2 id="a-small-detour-flatmap-for-arrays">A small detour: flatMap for Arrays</h2>
+<p>Let&rsquo;s look at this example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> numbers: [Int] = [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>]
+<span style="color:#66d9ef">let</span> numbersPlusOne = numbers.flatMap { $0 <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> }
+numbersPlusOne <span style="color:#75715e">// [11, 21, 31, 41]</span>
+</code></pre></div><p>As you can see, using a <em>flat</em> array, <code>flatMap</code> works the same as <code>map</code>: just takes one element of the array at a time, applies the transform (in this case adding one) and returns a new array with all the transformed values.</p>
+<p>The real power of <code>flatMap</code> appears when we have an array of arrays:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> numbersGrouped: [[Int]] = [[<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">30</span>], [<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">40</span>]]
+<span style="color:#66d9ef">let</span> numbersGroupedPlusOne = numbers.flatMap { $0 <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> }
+numbersGroupedPlusOne <span style="color:#75715e">// [11, 21, 31, 41]</span>
+</code></pre></div><p>As you can see, here <code>flatMap</code> is ignoring the fact we&rsquo;re traversing an array of arrays. Just <em>flattens</em> the array, then apply the transform. So the result is the same.</p>
+<h2 id="back-to-the-optional-stuff">Back to the Optional stuff</h2>
+<p>OK, so<code>flatMap</code> is also a function on Optionals, not only on Arrays. What is it good for? Let&rsquo;s look at this example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> numberAsString: String? = <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">100</span><span style="color:#960050;background-color:#1e0010">”</span>
+
+<span style="color:#75715e">// If we want to create a number from that Optional String, we’ll need to</span>
+<span style="color:#75715e">// 1st unwrap the String to be sure it’s not `nil`, then trying to</span>
+<span style="color:#75715e">// create a new Int</span>
+<span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> s = numberAsString, <span style="color:#66d9ef">let</span> n4 = Int(s) {
+    n4
+}
+</code></pre></div><p>To get the value inside that <code>Optional&lt;String&gt;</code> and convert into an <code>Int</code>, we need to do it in two steps:</p>
+<ul>
+<li>unwrap the String to be sure it’s not <code>nil</code>, this is done in <code>if let s = numberAsString</code></li>
+<li>then, take that string and create an <code>Int</code></li>
+</ul>
+<p>To avoid this two-step, boring process, they added a function that applies a transform (in this case <code>Int.init</code> which is used to create an <code>Int</code> after making sure there&rsquo;s <em>something</em> inside the <code>Optional</code>. Why not call it <code>applyIfSomethingInside</code>, <code>checkContentsAndApply</code> or any other fancy name? If any of you know the reasons, I&rsquo;m all ears at <a href="https://twitter.com/dfreniche">Twitter</a>)</p>
+<p>So code is now:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#75715e">// flatMap accepts a trailing closure and unwraps the String for us</span>
+
+<span style="color:#66d9ef">let</span> n1: Int? = numberAsString.flatMap { (unwrappedString: String) -&gt; Int? <span style="color:#66d9ef">in</span>
+    <span style="color:#66d9ef">return</span> Int(unwrappedString)
+}
+</code></pre></div><p>We can simplify that, as there&rsquo;s only one line in that closure we can get rid of <code>return</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> n1: Int? = numberAsString.flatMap { (unwrappedString: String) -&gt; Int? <span style="color:#66d9ef">in</span>
+    Int(unwrappedString)
+}
+</code></pre></div><p>And now, as there&rsquo;s only one parameter we can use the positional <code>$0</code> parameter like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> n1: Int? = numberAsString.flatMap {
+    Int($0)
+}
+</code></pre></div><p>But we can even just pass the name of the function we want to apply, reaching our final form:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#75715e">// This is a more succint way, too succint maybe</span>
+<span style="color:#66d9ef">let</span> n3: Int? = numberAsString.flatMap(Int.<span style="color:#66d9ef">init</span>)
+</code></pre></div><p>OK, so now I understand how this <code>flatMap</code> works on <code>Optional</code>. Only took me a blog post to understand it&hellip;</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="https://dfreniche.github.io/posts/2020-08-15-the-humble-assignment-operator/">
+          <span class="button__icon">←</span>
+          <span class="button__text">The humble assignment operator in Swift</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/">
+          <span class="button__text">Swift, the simple and easy to learn language?</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user"> </div>
+    
+  </div>
+</footer>
+
+<script src="https://dfreniche.github.io/assets/main.js"></script>
+<script src="https://dfreniche.github.io/assets/prism.js"></script>
+
+
+<footer class="footer">
+        <div class="footer__inner">
+            <div class="copyright">
+              <span>© 2021 Diego Freniche - Powered by <a href="http://gohugo.io">Hugo</a></span>
+              <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+            </div>
+        </div>
+      </footer>
+
+  
+</div>
+
+</body>
+</html>

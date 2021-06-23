@@ -7,10 +7,98 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Less Harsh Xcode Errors</title>
+      <link>https://dfreniche.github.io/posts/2021-05-24-less-harsh-xcode-errors/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2021-05-24-less-harsh-xcode-errors/</guid>
+      <description>Coding is sometimes hard. We all know this. But dealing with compiler errors is one of the worst parts. You have this idea in your mind, you want to try it quickly and then, 💥 compiler error! You forgot those semicolons! Or you added them and your language doesn&amp;rsquo;t like them! Or that class lacks a constructor!
+Whatever the reason, compiler errors are always harsh: we made a mistake, and the compiler is not forgiving.</description>
+    </item>
+    
+    <item>
+      <title>Leaving Teamwork</title>
+      <link>https://dfreniche.github.io/posts/2021-05-03-leaving-teamwork/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2021-05-03-leaving-teamwork/</guid>
+      <description>6th of May will be my last &amp;ldquo;official&amp;rdquo; day at Teamwork. Now I&amp;rsquo;m on my 2nd Annual Leave week, so effectively I&amp;rsquo;m out of the company since last Friday April 23th. Leaving a job can or can&amp;rsquo;t be a big deal. It depends on how invested you&amp;rsquo;re in it, how much you need the money, your personal / finances situation, etc. For me, as excited and happy I am about my next role, this is a sad event.</description>
+    </item>
+    
+    <item>
+      <title>Using a local and global Cocoapods executable</title>
+      <link>https://dfreniche.github.io/posts/2020-10-28-using-local-and-global-cocoapod/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-10-28-using-local-and-global-cocoapod/</guid>
+      <description>The problem You have a project that uses Cocoapods to solve all your dependencies needs. Everything works OK until one of your coworkers updates his version of Cocoapods (it&amp;rsquo;s never you, it&amp;rsquo;s always one of the others in these kind of stories). Then he makes some changes, and those changes are incompatible with the version you have.
+A solution Your team hold a meeting. You all decide settling on a certain version number.</description>
+    </item>
+    
+    <item>
+      <title>Drawing icons using Core Graphics</title>
+      <link>https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-10-08-drawing-icons-using-core-graphics/</guid>
+      <description>Drawing icons using Core Graphics Sometimes you need to add an icon to your iOS app, The designer sends you that plain, simple icon. It can be a bitmap-based icon, like a PNG. Problem with those is they get blurry if zoomed in too much. So we can use a vector-based icon, like a Font Icon or a PDF. These are vector based, contains the instructions to draw the icon, not the icon itself.</description>
+    </item>
+    
+    <item>
+      <title>The humble assignment operator in Swift</title>
+      <link>https://dfreniche.github.io/posts/2020-08-15-the-humble-assignment-operator/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-08-15-the-humble-assignment-operator/</guid>
+      <description>You&amp;rsquo;re starting to learn any programming language. From Assemmbler to Clojure, from Swift to COBOL. At some point you&amp;rsquo;ll want to assign a value to a memory position. It can be a constant or a variable. You just want to change that memory position. This is something so basic that CPUs have lots a lots of operations devoted to moving data around: setting the CPU registers, copying blocks of bytes from one place to another, moving data into the stack, etc.</description>
+    </item>
+    
+    <item>
+      <title>FlatMap for Optionals, took me a while to understand</title>
+      <link>https://dfreniche.github.io/posts/2020-08-13-flatmap-optionals/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-08-13-flatmap-optionals/</guid>
+      <description>In my last post I wrote about why I think Swift is not a simple language. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as simple for beginners, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&amp;rsquo;s for sure, but have been typing code since ´88.</description>
+    </item>
+    
+    <item>
+      <title>Swift, the simple and easy to learn language?</title>
+      <link>https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/</guid>
+      <description>Photo by Kimberly Farmer on Unsplash
+Apple markets Swift as The powerful programming language that is also easy to learn.
+Nope.
+Sorry to break this on you, but Swift is far from easy to learn. This is something I’ve been commenting in the past in Twitter, Slack and private conversations with other devs. To set a baseline, if I say Swift is not easy to learn, what would an easy to learn language look like?</description>
+    </item>
+    
+    <item>
+      <title>I love listening to music</title>
+      <link>https://dfreniche.github.io/posts/2020-07-19-i-love-listening-to-music/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-07-19-i-love-listening-to-music/</guid>
+      <description>I love listening to music. I can’t play any instrument, but I do enjoy listening to each note in a song, identifying the instruments, getting emotional with the lyrics of a music piece. Getting those goosebumps.
+Being a product of my time and age, I mostly listen to 80’s and 90’s songs, with some modern additions thrown into the mix. I hate Reggaeton and Trap with the power of a thousand suns, but that’s for a different post.</description>
+    </item>
+    
+    <item>
+      <title>Using Nef to test and document libraries</title>
+      <link>https://dfreniche.github.io/posts/2020-07-12-nef/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/posts/2020-07-12-nef/</guid>
+      <description>Sometimes I need to use a third party library (usually added to my project using CocoaPods) so I quickly grab it, integrate it and start adding code. But some frameworks are more difficult to understand, learn and use than others.
+Recently I’ve been learning RxSwift. I learn by trying out some code while reading or watching videos. I really need to code for it to stick. I can create a full-blown project and add that RxSwift dependency via CocoaPods, but what I don’t want it’s all the other stuff that comes with a project: storyboards, ViewControllers, etc.</description>
+    </item>
     
     <item>
       <title>We don&#39;t need quotas in tech</title>

@@ -7,10 +7,127 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bash</title>
+      <link>https://dfreniche.github.io/tags/bash/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xcode</title>
+      <link>https://dfreniche.github.io/tags/xcode/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/xcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://dfreniche.github.io/tags/personal/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>teamwork</title>
+      <link>https://dfreniche.github.io/tags/teamwork/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/teamwork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cocoapods</title>
+      <link>https://dfreniche.github.io/tags/cocoapods/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/cocoapods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ios</title>
+      <link>https://dfreniche.github.io/tags/ios/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coregraphics</title>
+      <link>https://dfreniche.github.io/tags/coregraphics/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/coregraphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swift</title>
+      <link>https://dfreniche.github.io/tags/swift/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning</title>
+      <link>https://dfreniche.github.io/tags/learning/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>https://dfreniche.github.io/tags/music/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docs</title>
+      <link>https://dfreniche.github.io/tags/docs/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>playgrounds</title>
+      <link>https://dfreniche.github.io/tags/playgrounds/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/playgrounds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://dfreniche.github.io/tags/tools/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfreniche.github.io/tags/tools/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>politics</title>
@@ -108,24 +225,6 @@
       <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://dfreniche.github.io/tags/sourcetree/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>teamwork</title>
-      <link>https://dfreniche.github.io/tags/teamwork/</link>
-      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfreniche.github.io/tags/teamwork/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bash</title>
-      <link>https://dfreniche.github.io/tags/bash/</link>
-      <pubDate>Mon, 29 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfreniche.github.io/tags/bash/</guid>
       <description></description>
     </item>
     

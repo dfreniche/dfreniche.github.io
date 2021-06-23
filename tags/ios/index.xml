@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iOS on www.freniche.com</title>
+    <title>ios on www.freniche.com</title>
     <link>https://dfreniche.github.io/tags/ios/</link>
-    <description>Recent content in iOS on www.freniche.com</description>
+    <description>Recent content in ios on www.freniche.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dfreniche.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>iOS</title>
-      <link>https://dfreniche.github.io/wiki/apple/ios/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <title>Using a local and global Cocoapods executable</title>
+      <link>https://dfreniche.github.io/posts/2020-10-28-using-local-and-global-cocoapod/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dfreniche.github.io/wiki/apple/ios/</guid>
-      <description>iOS Swift Swift
-Stopping the responder chain https://medium.com/@nguyenminhphuc/how-to-pass-ui-events-through-views-in-ios-c1be9ab1626b
-Make old Xcode work with newer SDK  This happens when you have Xcode 10.1, then Apple releases iOS 12.2 and that is not supported by Xcode 10.1, you need 10.2 but that means updating the whole OS.  ln -s /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/12.2\ \(16E226\) /Applications/Xcode-10.1.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport  Dark mode  How to turn Dark Mode on in the Simulator Apple&amp;rsquo;s Dark Mode docs Opt out of Dark Mode SO</description>
+      <guid>https://dfreniche.github.io/posts/2020-10-28-using-local-and-global-cocoapod/</guid>
+      <description>The problem You have a project that uses Cocoapods to solve all your dependencies needs. Everything works OK until one of your coworkers updates his version of Cocoapods (it&amp;rsquo;s never you, it&amp;rsquo;s always one of the others in these kind of stories). Then he makes some changes, and those changes are incompatible with the version you have.
+A solution Your team hold a meeting. You all decide settling on a certain version number.</description>
     </item>
     
   </channel>
