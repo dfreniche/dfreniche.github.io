@@ -219,6 +219,7 @@
       <description></description>
     </item>
     
+<<<<<<< HEAD
     <item>
       <title>SourceTree</title>
       <link>https://dfreniche.github.io/tags/sourcetree/</link>
@@ -228,5 +229,7 @@
       <description></description>
     </item>
     
+=======
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
   </channel>
 </rss>

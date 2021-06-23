@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xcode on www.freniche.com</title>

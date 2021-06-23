@@ -214,6 +214,7 @@ A solution Your team hold a meeting. You all decide settling on a certain versio
   
 
   <div class="post-content">
+<<<<<<< HEAD
     <h1 id="the-problem">The problem</h1>
 <p>You have a project that uses Cocoapods to solve all your dependencies needs. Everything works OK until one of your coworkers updates his version of Cocoapods (it&rsquo;s never you, it&rsquo;s always <em>one of the others</em> in these kind of stories). Then he makes some changes, and those changes are incompatible with the version you have.</p>
 <h1 id="a-solution">A solution</h1>
@@ -258,6 +259,73 @@ gem <span style="color:#e6db74">&#34;xcpretty&#34;</span>
 export SYSTEM_POD<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>which pod<span style="color:#e6db74">`</span>
 alias pod<span style="color:#f92672">=</span>mypod
 </code></pre></div>
+=======
+    
+
+<h1 id="the-problem">The problem</h1>
+
+<p>You have a project that uses Cocoapods to solve all your dependencies needs. Everything works OK until one of your coworkers updates his version of Cocoapods (it&rsquo;s never you, it&rsquo;s always <em>one of the others</em> in these kind of stories). Then he makes some changes, and those changes are incompatible with the version you have.</p>
+
+<h1 id="a-solution">A solution</h1>
+
+<p>Your team hold a meeting. You all decide settling on a certain version number. You even write that version down somewhere. Documentation FTW! But you don&rsquo;t enforce that <em>tool dependency</em>.</p>
+
+<h1 id="the-problem-take-two">The problem, take two</h1>
+
+<p>Even as it&rsquo;s been agreed, people forget, or upgrade Cocoapods by mistake. You&rsquo;re again having the initial problem. Again, blame is to put in <em>one of your coworkers</em>. You can&rsquo;t be that stupid, can you?</p>
+
+<h1 id="a-solution-improved">A solution, improved</h1>
+
+<p>You decide to use a local version of Cocoapods that&rsquo;s independent of the global version you have installed in your system. This way, you have your agreed version documented somewhere and also this tool dependency is automated. As Cocoapods is a Ruby thing, you use <a href="https://bundler.io/">Bundler</a>.</p>
+
+<blockquote>
+<p>Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.</p>
+</blockquote>
+
+<p>In short, you install Bundler, then add a config file for Bundler (a <code>Gemfile</code>) stating the exact versions for all the gems you&rsquo;ll use (useful not only for Cocoapods, but also for Fastlane for instance) and run <code>bundle install</code>.</p>
+
+<p>An example of a <code>Gemfile</code> is below</p>
+
+<pre><code class="language-ruby">source &quot;https://rubygems.org&quot;
+
+gem &quot;cocoapods&quot;, '~&gt; 1.8.4'
+gem &quot;fastlane&quot;
+gem &quot;xcpretty&quot;
+
+</code></pre>
+
+<h1 id="the-problem-take-three">The problem, take three</h1>
+
+<p>Now your team has to use <code>bundle exec pod install</code> and <code>bundle exec pod update</code> each time they want to update the dependencies of your project. But there&rsquo;s still room for error and Murphy strikes back and <em>somebody</em> (remember, never it&rsquo;s you) does a <code>pod install</code>, using the non-agreed Cocoa Pods version.</p>
+
+<h1 id="a-solution-improved-1">A solution, improved++</h1>
+
+<p>Let&rsquo;s use some bash trickery! The idea is to write a bash alias that reads our current directory. If there&rsquo;s no <code>Gemfile</code>, then use the global Cocoapods version. If there&rsquo;s a <code>Gemfile</code> around, look for a line with <code>cocoapods</code> in it. If it&rsquo;s there, run Cocoapods through Bundler.</p>
+
+<p>So now you can use <code>bundle exec pod install</code>, which will use the local installed version of Cocoapods, or if you use <code>pod install</code> it will autocorrect to the former. Profit!</p>
+
+<pre><code class="language-bash"># Put this in your .bashrc, .profile, etc.
+
+function mypod() {
+  if [ -f &quot;Gemfile&quot; ]; then
+    A=`cat Gemfile | grep cocoapods`
+    if [ -z $A ]; then
+      # Gemfile without local cocoapods
+      $SYSTEM_POD $@
+    else
+      bundle exec pod $@
+    fi
+  else
+      $SYSTEM_POD $@
+  fi
+}
+
+# we search for the global pod gem and store its path here
+export SYSTEM_POD=`which pod`
+alias pod=mypod
+</code></pre>
+
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
   </div>
   
   <div class="pagination">

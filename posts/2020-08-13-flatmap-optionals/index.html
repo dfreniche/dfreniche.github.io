@@ -209,6 +209,7 @@
   
 
   <div class="post-content">
+<<<<<<< HEAD
     <p>In my last post I wrote about <a href="https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/">why I think Swift is not a simple language</a>. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as <em>simple for beginners</em>, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&rsquo;s for sure, but have been typing code since ´88. I´ve seen a couple lines of code. I shouldn&rsquo;t struggle with stuff like this.</p>
 <h2 id="exhibit-one">Exhibit one</h2>
 <p>I found similar code to this example during a PR review:</p>
@@ -263,6 +264,95 @@ numbersGroupedPlusOne <span style="color:#75715e">// [11, 21, 31, 41]</span>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#75715e">// This is a more succint way, too succint maybe</span>
 <span style="color:#66d9ef">let</span> n3: Int? = numberAsString.flatMap(Int.<span style="color:#66d9ef">init</span>)
 </code></pre></div><p>OK, so now I understand how this <code>flatMap</code> works on <code>Optional</code>. Only took me a blog post to understand it&hellip;</p>
+=======
+    
+
+<p>In my last post I wrote about <a href="https://dfreniche.github.io/posts/2020-07-27-swift-the-not-that-easy-to-learn-language/">why I think Swift is not a simple language</a>. After all, if you need powerful, expressive constructs you´ll end up having some degree of complexity in there. My critique was more about how they market it as <em>simple for beginners</em>, when sometimes I have to scratch my head to understand some code. I´m dumb as a rock, that&rsquo;s for sure, but have been typing code since ´88. I´ve seen a couple lines of code. I shouldn&rsquo;t struggle with stuff like this.</p>
+
+<h2 id="exhibit-one">Exhibit one</h2>
+
+<p>I found similar code to this example during a PR review:</p>
+
+<pre><code class="language-swift">let numberAsString: String? = “100”
+
+/// ...
+
+let n: Int? = numberAsString.flatMap(Int.init)
+</code></pre>
+
+<p>Wait, what? <code>flatMap</code>? Isn´t that a function for arrays of arrays, that apply a transform to the whole array, then <em>flattens</em> the result into a single array? Well, yes. The idea behind <code>Array::flatMap</code> is to apply a transform to all elements inside an array, that can contain other arrays, so every element gets transformed.</p>
+
+<h2 id="a-small-detour-flatmap-for-arrays">A small detour: flatMap for Arrays</h2>
+
+<p>Let&rsquo;s look at this example:</p>
+
+<pre><code class="language-swift">let numbers: [Int] = [10, 20, 30, 40]
+let numbersPlusOne = numbers.flatMap { $0 + 1 }
+numbersPlusOne // [11, 21, 31, 41]
+</code></pre>
+
+<p>As you can see, using a <em>flat</em> array, <code>flatMap</code> works the same as <code>map</code>: just takes one element of the array at a time, applies the transform (in this case adding one) and returns a new array with all the transformed values.</p>
+
+<p>The real power of <code>flatMap</code> appears when we have an array of arrays:</p>
+
+<pre><code class="language-swift">let numbersGrouped: [[Int]] = [[10, 30], [20, 40]]
+let numbersGroupedPlusOne = numbers.flatMap { $0 + 1 }
+numbersGroupedPlusOne // [11, 21, 31, 41]
+</code></pre>
+
+<p>As you can see, here <code>flatMap</code> is ignoring the fact we&rsquo;re traversing an array of arrays. Just <em>flattens</em> the array, then apply the transform. So the result is the same.</p>
+
+<h2 id="back-to-the-optional-stuff">Back to the Optional stuff</h2>
+
+<p>OK, so<code>flatMap</code> is also a function on Optionals, not only on Arrays. What is it good for? Let&rsquo;s look at this example:</p>
+
+<pre><code class="language-swift">let numberAsString: String? = “100”
+
+// If we want to create a number from that Optional String, we’ll need to
+// 1st unwrap the String to be sure it’s not `nil`, then trying to
+// create a new Int
+if let s = numberAsString, let n4 = Int(s) {
+    n4
+}
+</code></pre>
+
+<p>To get the value inside that <code>Optional&lt;String&gt;</code> and convert into an <code>Int</code>, we need to do it in two steps:
+- unwrap the String to be sure it’s not <code>nil</code>, this is done in <code>if let s = numberAsString</code>
+- then, take that string and create an <code>Int</code></p>
+
+<p>To avoid this two-step, boring process, they added a function that applies a transform (in this case <code>Int.init</code> which is used to create an <code>Int</code> after making sure there&rsquo;s <em>something</em> inside the <code>Optional</code>. Why not call it <code>applyIfSomethingInside</code>, <code>checkContentsAndApply</code> or any other fancy name? If any of you know the reasons, I&rsquo;m all ears at <a href="https://twitter.com/dfreniche">Twitter</a>)</p>
+
+<p>So code is now:</p>
+
+<pre><code class="language-swift">// flatMap accepts a trailing closure and unwraps the String for us
+
+let n1: Int? = numberAsString.flatMap { (unwrappedString: String) -&gt; Int? in
+    return Int(unwrappedString)
+}
+</code></pre>
+
+<p>We can simplify that, as there&rsquo;s only one line in that closure we can get rid of <code>return</code>:</p>
+
+<pre><code class="language-swift">let n1: Int? = numberAsString.flatMap { (unwrappedString: String) -&gt; Int? in
+    Int(unwrappedString)
+}
+</code></pre>
+
+<p>And now, as there&rsquo;s only one parameter we can use the positional <code>$0</code> parameter like this:</p>
+
+<pre><code class="language-swift">let n1: Int? = numberAsString.flatMap {
+    Int($0)
+}
+</code></pre>
+
+<p>But we can even just pass the name of the function we want to apply, reaching our final form:</p>
+
+<pre><code class="language-swift">// This is a more succint way, too succint maybe
+let n3: Int? = numberAsString.flatMap(Int.init)
+</code></pre>
+
+<p>OK, so now I understand how this <code>flatMap</code> works on <code>Optional</code>. Only took me a blog post to understand it&hellip;</p>
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
 
   </div>
   

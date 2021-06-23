@@ -216,6 +216,7 @@ Recently I’ve been learning RxSwift. I learn by trying out some code while rea
   
 
   <div class="post-content">
+<<<<<<< HEAD
     <p>Sometimes I need to use a third party library (usually added to my project using CocoaPods) so I quickly grab it, integrate it and start adding code. But some frameworks are more difficult to understand, learn and use than others.</p>
 <p>Recently I’ve been learning RxSwift. I learn by  trying out some code while reading or watching videos. I <em>really</em> need to code for it to stick. I can create a full-blown project and add that RxSwift dependency via CocoaPods, but what I don’t want it’s all the other stuff that comes with a project: storyboards, ViewControllers, etc. I just want to focus on code using pure RxSwift, and take some notes. That’s it.</p>
 <p><img src="/img/nef-rx-playground.png" alt="Playground showing some pages opened with RxCode I won&rsquo;t describe because I don&rsquo;t understand yet"></p>
@@ -235,14 +236,62 @@ Recently I’ve been learning RxSwift. I learn by trying out some code while rea
 <p>By default Nef always adds the <a href="https://bow-swift.io/">Bow library</a>, a nice library for those into Functional Programming. But in my case I want an empty canvas. So I create my Nef Playgrounds using this command:</p>
 <pre><code>$ nef playground --name HelloWorldPost --podfile ./Podfile --platform ios                         
 </code></pre><p>Here I’m passing in a Podfile with no Pods, so none are installed at the beginning. This is my empty <code>Podfile</code>:</p>
+=======
+    
+
+<p>Sometimes I need to use a third party library (usually added to my project using CocoaPods) so I quickly grab it, integrate it and start adding code. But some frameworks are more difficult to understand, learn and use than others.</p>
+
+<p>Recently I’ve been learning RxSwift. I learn by  trying out some code while reading or watching videos. I <em>really</em> need to code for it to stick. I can create a full-blown project and add that RxSwift dependency via CocoaPods, but what I don’t want it’s all the other stuff that comes with a project: storyboards, ViewControllers, etc. I just want to focus on code using pure RxSwift, and take some notes. That’s it.</p>
+
+<p><img src="/img/nef-rx-playground.png" alt="Playground showing some pages opened with RxCode I won't describe because I don't understand yet" /></p>
+
+<p>Wouldn’t it be perfect if I could create a Markdown document containing RxSwift code that also <em>runs</em>? Well, using [Nef]() the other way around is possible. Nef allows you to <em>create playgrounds that can contain CocoaPods dependencies</em>. Then, you can add text to those Playgrounds using Markdown comments. And finally, Nef allows you to <em>export the contents of this Playground as an standalone Markdown file</em>. It’s documentation that <em>compiles</em>. Nice, isn’t?</p>
+
+<h2 id="let-s-try-it-installation">Let’s try it! Installation</h2>
+
+<p>Let’s go step by step. First thing you need to do is install <code>Nef</code> itself. For that, just type <code>brew install nef</code> in a Terminal. If you don’t have Homebrew installed you can get it from [here](). It’s a must. Close this and go there. Install brew.</p>
+
+<p>OK, now we have Nef installed. Check you have the latest version typing:</p>
+
+<pre><code>$ nef version
+</code></pre>
+
+<h2 id="our-first-nef-playground">Our first Nef Playground!</h2>
+
+<p>We can create a new Nef Playground just typing:</p>
+
+<pre><code>$ nef playground --name HelloWorldPost --platform ios
+</code></pre>
+
+<p>This will create a project Workspace that contains:
+- a Pod project with all the libraries you want to test / learn about.
+- a project containing you Playground, so you can write code there.</p>
+
+<p>By default Nef always adds the <a href="https://bow-swift.io/">Bow library</a>, a nice library for those into Functional Programming. But in my case I want an empty canvas. So I create my Nef Playgrounds using this command:</p>
+
+<pre><code>$ nef playground --name HelloWorldPost --podfile ./Podfile --platform ios                         
+</code></pre>
+
+<p>Here I’m passing in a Podfile with no Pods, so none are installed at the beginning. This is my empty <code>Podfile</code>:</p>
+
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
 <pre><code>source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '11.0'
 use_frameworks!
 
 workspace 'HelloWorldPost.xcworkspace'
+<<<<<<< HEAD
 </code></pre><p>Note you have to specify the name of your Workspace. Will be created with that name.</p>
 <p>You can also add any pods you want to be installed instead of Bow. For instance to create a Nef Playground with RxSwift you’ll create this <code>Podfile</code>:</p>
+=======
+</code></pre>
+
+<p>Note you have to specify the name of your Workspace. Will be created with that name.</p>
+
+<p>You can also add any pods you want to be installed instead of Bow. For instance to create a Nef Playground with RxSwift you’ll create this <code>Podfile</code>:</p>
+
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
 <pre><code>platform :ios, '11.0'
 use_frameworks!
 
@@ -251,6 +300,7 @@ target 'HelloWorldPost' do
     pod 'RxSwift', '~&gt; 4.0'
     pod 'RxCocoa', '~&gt; 4.0'
 end
+<<<<<<< HEAD
 </code></pre><h2 id="writing-in-the-playground">Writing in the Playground</h2>
 <p>When Nef has finished, you&rsquo;ll have a new app in your folder. Open it with <code>open HelloWorldPost.app</code>. Xcode will show your app, and a playground inside.</p>
 <p><img src="/img/nef-first.png" alt="Xcode showing an empty Playground, and the Pods project created inside our app"></p>
@@ -259,6 +309,27 @@ end
 <p>When you’re happy with your code and your prose, you can go ahead and create a Markdown file that can be posted in your blog, printed as PDF, etc. Just use Nef!</p>
 <pre><code>$ nef markdown --project HelloWorldPost.app --output markdown
 </code></pre><p>This will output each page in your Playground to the folder <code>markdown</code>. Rendering my Rx Playground I go all this:</p>
+=======
+</code></pre>
+
+<h2 id="writing-in-the-playground">Writing in the Playground</h2>
+
+<p>When Nef has finished, you&rsquo;ll have a new app in your folder. Open it with <code>open HelloWorldPost.app</code>. Xcode will show your app, and a playground inside.</p>
+
+<p><img src="/img/nef-first.png" alt="Xcode showing an empty Playground, and the Pods project created inside our app" /></p>
+
+<p>Now that you have this new Playground you can write any code you want to try. You can add Markdown comments to the Playground that can be rendered as documentation. Create pages to separate different sections while you’re learning, etc.</p>
+
+<h2 id="generate-your-markdown-file">Generate your Markdown file</h2>
+
+<p>When you’re happy with your code and your prose, you can go ahead and create a Markdown file that can be posted in your blog, printed as PDF, etc. Just use Nef!</p>
+
+<pre><code>$ nef markdown --project HelloWorldPost.app --output markdown
+</code></pre>
+
+<p>This will output each page in your Playground to the folder <code>markdown</code>. Rendering my Rx Playground I go all this:</p>
+
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
 <pre><code>🙌 rendered Xcode Playgrounds in 'markdown'
 Get playgrounds in 'Rx'... ✓
 Get pages in playground 'Rx'... ✓
@@ -280,8 +351,17 @@ Get pages in playground 'Rx'... ✓
 	• Processing page TakeWhile... ✓
 	• Processing page Take Until... ✓
 🙌 rendered Xcode Playgrounds in 'markdown'
+<<<<<<< HEAD
 </code></pre><h2 id="uses-of-nef">Uses of Nef</h2>
 <p>If you’re into blogging, or want to write some docs for your team, or writing a programming book, and really want to be sure those sample code snippets are correct, instead of copying and pasting, correcting, copying and pasting again just use Nef and be always sure everything compiles as it should.</p>
+=======
+</code></pre>
+
+<h2 id="uses-of-nef">Uses of Nef</h2>
+
+<p>If you’re into blogging, or want to write some docs for your team, or writing a programming book, and really want to be sure those sample code snippets are correct, instead of copying and pasting, correcting, copying and pasting again just use Nef and be always sure everything compiles as it should.</p>
+
+>>>>>>> d8d1b0851c118b3176bbd2a36e1373f24d34f6ad
 <p>Nef is continuus deployment for your docs.</p>
 
   </div>
